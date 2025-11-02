@@ -1,0 +1,1963 @@
+####################################x55###############################################
+[    0.285327] 831000.serial: ttyMSM0 at MMIO 0x831000 (irq = 25, base_baud = 115200) is a MSM
+[    0.286250] msm_serial: driver initialized
+[    0.287770] register_client_adhoc:find path.src 1 dest 618
+[    0.287961] register_client_adhoc:Client handle 7 msm-rng-noc
+[    0.290452] random: fast init done
+[    0.291523] random: crng init done
+[    0.294233] diag: Pcie registration initiated for id: 0
+[    0.295038] diag: pcie channel with id: 0 registered successfully
+[    0.301889] diag: Unable to register with PCIE, id: 1
+[    0.301918] diag: MUX: unable to register pcie operations for proc: 1, err: -5
+[    0.301924] diag: MUX: unable to register PCIe operations, continuing with USB registrations for proc: 1, err: -5
+[    0.303974] iommu: Adding device soc:apps_iommu_test_device to group 3
+[    0.316101] brd: module loaded
+[    0.324512] loop: module loaded
+[    0.325045] zram: Added device: zram0
+[    0.325958] QSEECOM: qseecom_probe: qseecom.qsee_version = 0x1402000
+[    0.325987] QSEECOM: qseecom_retrieve_ce_data: Device does not support PFE/FDE
+[    0.325994] QSEECOM: qseecom_probe: no-clock-support=0x1
+[    0.326003] QSEECOM: qseecom_probe: qseecom.qsee_reentrancy_support = 2
+[    0.326035] QSEECOM: qseecom_probe: secure app region addr=0x90000000 size=0x500000
+[    0.328677] QSEECOM: qseecom_probe: qseecom.whitelist_support = 1
+[    0.329800] SCSI Media Changer driver v0.25 
+[    0.331220] register_client_adhoc:find path.src 91 dest 512
+[    0.331529] register_client_adhoc:Client handle 8 qpic_nand
+[    0.332646] sps: BAM device 0x01b04000 is not registered yet.
+[    0.333066] sps:BAM 0x01b04000 is registered.
+[    0.333082] msm_nand_bam_init: msm_nand_bam_init: BAM device registered: bam_handle 0xcb95f400
+[    0.333503] sps:BAM 0x01b04000 (va:0x4e987f40) enabled: ver:0x19, number of pipes:9
+[    0.334081] msm_nand_version_check: nand_major:2, nand_minor:0, qpic_major:2, qpic_minor:0
+[    0.334282] msm_nand_parse_smem_ptable: Parsing partition table info from SMEM
+[    0.334428] msm_nand_parse_smem_ptable: SMEM partition table found: ver: 4 len: 27
+[    0.334461] msm_nand_version_check: nand_major:2, nand_minor:0, qpic_major:2, qpic_minor:0
+[    0.335058] msm_nand_flash_onfi_probe: Found an ONFI compliant device H27S4G8F2EKPB4      ­
+[    0.335069] msm_nand_scan: NAND Id: 0x1680acad Buswidth: 8Bits Density: 512 MByte
+[    0.335075] msm_nand_scan: pagesize: 4096 Erasesize: 262144 oobsize: 256 (in Bytes)
+[    0.335079] msm_nand_scan: BCH ECC: 4 Bit
+[    0.335091] msm_nand_scan: CFG0: 0x2a0409c0,           CFG1: 0x0804645c
+[    0.335091]             RAWCFG0: 0x2c8401c0,        RAWCFG1: 0x0005055d
+[    0.335091]           ECCBUFCFG: 0x00000203,      ECCBCHCFG: 0x42040700
+[    0.335091]           RAWECCCFG: 0x42000701, BAD BLOCK BYTE: 0x00000191
+[    0.335115] Creating 27 MTD partitions on "1b00000.nand":
+[    0.335134] 0x000000000000-0x000000280000 : "sbl"
+[    0.336331] 0x000000280000-0x000000500000 : "mibib"
+[    0.337112] 0x000000500000-0x000001000000 : "efs2"
+[    0.337874] 0x000001000000-0x0000011c0000 : "tz"
+[    0.338569] 0x0000011c0000-0x0000012c0000 : "tz_devcfg"
+[    0.339222] 0x0000012c0000-0x000001440000 : "ddr"
+[    0.339945] 0x000001440000-0x000001540000 : "apdp"
+[    0.341006] 0x000001540000-0x000001640000 : "multi_image"
+[    0.341729] 0x000001640000-0x000001740000 : "aop"
+[    0.342423] 0x000001740000-0x000001840000 : "qhee"
+[    0.343182] 0x000001840000-0x000001940000 : "abl"
+[    0.343875] 0x000001940000-0x000001bc0000 : "uefi"
+[    0.344538] 0x000001bc0000-0x000001d40000 : "toolsfv"
+[    0.345243] 0x000001d40000-0x000001ec0000 : "loader_sti"
+[    0.345925] 0x000001ec0000-0x000002bc0000 : "boot"
+[    0.346628] 0x000002bc0000-0x000002cc0000 : "scrub"
+[    0.347377] 0x000002cc0000-0x000008e00000 : "modem"
+[    0.348103] 0x000008e00000-0x000008fc0000 : "misc"
+[    0.348817] 0x000008fc0000-0x000009140000 : "devinfo"
+[    0.349541] 0x000009140000-0x000009e40000 : "recovery"
+[    0.350466] 0x000009e40000-0x00000a000000 : "fota"
+[    0.351249] 0x00000a000000-0x00000c100000 : "recoveryfs"
+[    0.351991] 0x00000c100000-0x00000c200000 : "sec"
+[    0.352679] 0x00000c200000-0x00000c600000 : "factory"
+[    0.353405] 0x00000c600000-0x00000c6c0000 : "ipa_fw"
+[    0.354100] 0x00000c6c0000-0x00000c7c0000 : "usb_qti"
+[    0.354849] 0x00000c7c0000-0x000020000000 : "system"
+[    0.355574] msm_nand_probe: NANDc phys addr 0x1b00000, BAM phys addr 0x1b04000, BAM IRQ 34
+[    0.355598] msm_nand_probe: Allocated DMA buffer at virt_addr 0x2ff984b5, phys_addr 0x8c454000
+[    0.355603] msm_nand_probe: Host capabilities:0x00000000
+[    0.358504] sps: BAM device 0x00804000 is not registered yet.
+[    0.358957] sps:BAM 0x00804000 is registered.
+[    0.360678] sps:BAM 0x00804000 (va:0x3d200406) enabled: ver:0x19, number of pipes:16
+[    0.362111] MACsec IEEE 802.1AE
+[    0.362668] libphy: Fixed MDIO Bus: probed
+[    0.362953] tun: Universal TUN/TAP device driver, 1.6
+[    0.363732] PPP generic driver version 2.4.2
+[    0.365315] usbcore: registered new interface driver asix
+[    0.365429] usbcore: registered new interface driver ax88179_178a
+[    0.365479] usbcore: registered new interface driver cdc_ether
+[    0.365518] usbcore: registered new interface driver smsc75xx
+[    0.365559] usbcore: registered new interface driver smsc95xx
+[    0.365597] usbcore: registered new interface driver net1080
+[    0.365622] usbcore: registered new interface driver cdc_subset
+[    0.365647] usbcore: registered new interface driver zaurus
+[    0.366124] usbcore: registered new interface driver cdc_ncm
+[    0.368992] sd_vdd: supplied by vddpx_2
+[    0.371366] iommu: Adding device a600000.ssusb to group 4
+[    0.374645] dwc3 a600000.dwc3: changing max_speed on rev 00000000
+[    0.378667] register_client_adhoc:find path.src 61 dest 512
+[    0.378912] register_client_adhoc:find path.src 61 dest 676
+[    0.378999] register_client_adhoc:find path.src 1 dest 583
+[    0.379121] register_client_adhoc:Client handle 9 usb
+[    0.385454] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.385484] ehci-pci: EHCI PCI platform driver
+[    0.385638] ehci-msm: Qualcomm On-Chip EHCI Host Controller
+[    0.387176] usbcore: registered new interface driver cdc_acm
+[    0.387189] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.387256] usbcore: registered new interface driver usb-storage
+[    0.387285] usbcore: registered new interface driver ums-alauda
+[    0.387311] usbcore: registered new interface driver ums-cypress
+[    0.387337] usbcore: registered new interface driver ums-datafab
+[    0.387362] usbcore: registered new interface driver ums-freecom
+[    0.387387] usbcore: registered new interface driver ums-isd200
+[    0.387412] usbcore: registered new interface driver ums-jumpshot
+[    0.387439] usbcore: registered new interface driver ums-karma
+[    0.387469] usbcore: registered new interface driver ums-onetouch
+[    0.387498] usbcore: registered new interface driver ums-sddr09
+[    0.387524] usbcore: registered new interface driver ums-sddr55
+[    0.387548] usbcore: registered new interface driver ums-usbat
+[    0.387606] usbcore: registered new interface driver usb_ehset_test
+[    0.387638] usbcore: registered new interface driver lvs
+[    0.389411] qti_usb_gadget: probe of qcom_gadget failed with error -22
+[    0.392977] qcom,qpnp-rtc c440000.qcom,spmi:qcom,pmxprairie@8:qcom,rtc@6000: rtc core: registered qpnp_rtc as rtc0
+[    0.393364] i2c /dev entries driver
+[    0.394164] register_client_adhoc:find path.src 86 dest 512
+[    0.394410] register_client_adhoc:Client handle 9 837000.i2c
+[    0.396621] IR NEC protocol handler initialized
+[    0.396641] IR RC5(x/sz) protocol handler initialized
+[    0.396646] IR RC6 protocol handler initialized
+[    0.396650] IR JVC protocol handler initialized
+[    0.396654] IR Sony protocol handler initialized
+[    0.396657] IR SANYO protocol handler initialized
+[    0.396662] IR Sharp protocol handler initialized
+[    0.396666] IR MCE Keyboard/mouse protocol handler initialized
+[    0.396670] IR XMP protocol handler initialized
+[    0.404399] sdhci: Secure Digital Host Controller Interface driver
+[    0.404424] sdhci: Copyright(c) Pierre Ossman
+[    0.404429] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.405498] usbcore: registered new interface driver usbhid
+[    0.405512] usbhid: USB HID core driver
+[    0.405594] ipa_ut ipa_ut_module_init:1045 Loading IPA test module...
+[    0.409756] register_client_adhoc:find path.src 78 dest 512
+[    0.411200] register_client_adhoc:Client handle 10 sdhc1
+[    0.425021] mmc0: SDHCI controller on 8804000.sdhci [8804000.sdhci] using 32-bit ADMA in legacy mode
+[    0.660911] register_client_adhoc:find path.src 1 dest 627
+[    0.661131] register_client_adhoc:Client handle 11 soc:qcom,snoc_pcnoc_keepalive
+[    0.662185] tz_log 1468f720.tz-log: Hyp log service is not supported
+[    0.663514] register_client_adhoc:find path.src 1 dest 512
+[    0.663671] register_client_adhoc:Client handle 12 soc:qcom,ddr_keepalive
+[    0.665093] register_client_adhoc:find path.src 1 dest 512
+[    0.665217] register_client_adhoc:Client handle 13 soc:qcom,cpubw
+[    0.668285] coresight-tmc 6b09000.tmc: invalid cti data
+[    0.668401] coresight-tmc 6048000.tmc: failed to get flush cti, defer probe
+[    0.669002] coresight-dynamic-funnel 6045000.funnel: FUNNEL initialized
+[    0.669227] coresight-dynamic-funnel 6b08000.funnel: FUNNEL initialized
+[    0.669415] coresight-dynamic-funnel 6005000.funnel: FUNNEL initialized
+[    0.669602] coresight-dynamic-funnel 6041000.funnel: FUNNEL initialized
+[    0.669802] coresight-dynamic-funnel 6042000.funnel: FUNNEL initialized
+[    0.669991] coresight-dynamic-funnel 6804000.funnel: FUNNEL initialized
+[    0.670255] coresight-dynamic-funnel 680c000.funnel: FUNNEL initialized
+[    0.670463] coresight-dynamic-funnel 680a000.funnel: FUNNEL initialized
+[    0.670659] coresight-dynamic-funnel 69e2000.funnel: FUNNEL initialized
+[    0.671844] coresight-stm 6002000.stm: stm_register_device failed, probing deffered
+[    0.678892] coresight-csr 6001000.csr: CSR initialized: coresight-csr
+[    0.679032] coresight-csr 6b0e000.csr: CSR initialized: coresight-swao-csr
+[    0.679653] coresight-dummy soc:dummy_sink: Dummy device initialized
+[    0.680211] coresight-remote-etm soc:modem_etm0: Remote ETM initialized
+[    0.680474] coresight-remote-etm soc:modem_etm1: Remote ETM initialized
+[    0.681359] gpio-led init driver
+[    0.681576] gpio_led_probe:gpio device register
+[    0.682018] rffe dev init driver
+[    0.682238] rffe_dev_probe: get gpio_rffe_0 number is 27
+[    0.682253] rffe_dev_probe: get gpio_rffe_1 number is 33
+[    0.682261] rffe_dev_probe: get gpio_rffe_2 number is 36
+[    0.682269] rffe_dev_probe: get gpio_rffe_3 number is 37
+[    0.682287] rffe_dev_probe:gpio device register
+[    0.682695] hw_version_init
+[    0.682819] oppo sim_card_init
+[    0.682921] oppo_gpio_all init driver
+[    0.683012] oppo nand init
+[    0.683098] watchdog_ctl_v2_init
+[    0.683180] gpio_cust initialized
+[    0.683249] Netfilter messages via NETLINK v0.30.
+[    0.683376] nf_conntrack version 0.5.0 (4096 buckets, 16384 max)
+[    0.683538] ctnetlink v0.93: registering with nfnetlink.
+[    0.683747] ip_set: protocol 6
+[    0.683851] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    0.684175] gre: GRE over IPv4 demultiplexor driver
+[    0.684185] ip_gre: GRE over IPv4 tunneling driver
+[    0.685010] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    0.685308] arp_tables: arp_tables: (C) 2002 David S. Miller
+[    0.685626] NET: Registered protocol family 10
+[    0.686573] Segment Routing with IPv6
+[    0.686642] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    0.686881] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.687658] ip6_gre: GRE over IPv6 tunneling driver
+[    0.688022] NET: Registered protocol family 17
+[    0.688089] Bridge firewalling registered
+[    0.688096] Ebtables v2.0 registered
+[    0.688266] 8021q: 802.1Q VLAN Support v1.8
+[    0.691627] dwc3 a600000.dwc3: changing max_speed on rev 00000000
+[    0.694653] register_client_adhoc:find path.src 61 dest 512
+[    0.694823] register_client_adhoc:find path.src 61 dest 676
+[    0.694892] register_client_adhoc:find path.src 1 dest 583
+[    0.694963] register_client_adhoc:Client handle 14 usb
+[    0.695366] sps:BAM 0x0a704000 is registered.
+[    0.703703] coresight-tmc 6b09000.tmc: invalid cti data
+[    0.704720] sps:BAM 0x06064000 is registered.
+[    0.705683] coresight-stm 6002000.stm: STM32 initialized with master Enabled
+[    0.712469] ubi0: attaching mtd26
+[    0.760319] msm-dwc3 a600000.ssusb: DWC3 exited from low power mode
+[    0.761217] msm-dwc3 a600000.ssusb: DWC3 in low power mode
+[    0.761260] msm-dwc3 a600000.ssusb: Could not get usb psy
+[    1.073220] ubi0: scanning is finished
+[    1.080991] ubi0: attached mtd26 (name "system", size 312 MiB)
+[    1.081003] ubi0: PEB size: 262144 bytes (256 KiB), LEB size: 253952 bytes
+[    1.081009] ubi0: min./max. I/O unit sizes: 4096/4096, sub-page size 4096
+[    1.081014] ubi0: VID header offset: 4096 (aligned 4096), data offset: 8192
+[    1.081019] ubi0: good PEBs: 1249, bad PEBs: 0, corrupted PEBs: 0
+[    1.081024] ubi0: user volume: 5, internal volumes: 1, max. volumes count: 128
+[    1.081030] ubi0: max/mean erase counter: 118/50, WL threshold: 4096, image sequence number: 303696615
+[    1.081035] ubi0: available PEBs: 0, total reserved PEBs: 1249, PEBs reserved for bad PEB handling: 20
+[    1.081111] qcom,qpnp-rtc c440000.qcom,spmi:qcom,pmxprairie@8:qcom,rtc@6000: setting system clock to 1970-01-01 00:00:04 UTC (4)
+[    1.081779] cpuidle: enable-method property 'psci' found operations
+[    1.082184] lpm_levels: register_cluster_lpm_stats()
+[    1.083789] rmnet_ipa3 started initialization
+[    1.083804] IPA SSR support = True
+[    1.083808] IPA is_platform_type_msm = False
+[    1.083812] IPA SG support = False
+[    1.083816] IPA Napi Enable = False
+[    1.083820] using default for wan-rx-desc-size = 256
+[    1.083904] ubi0: background thread "ubi_bgt0d" started, PID 183
+[    1.085643] ipa-wan ipa3_wwan_probe:2880 rmnet_ipa completed initialization
+[    1.086383] RNDIS_IPA module is loaded.
+[    1.087074] msm_bus_late_init: Remove handoff bw requests
+[    1.087644] emac_phy: disabling
+[    1.087654] rgmii_io_pads: disabling
+[    1.087661] vreg_conn_pa: disabling
+[    1.087665] vreg_conn_1p8: disabling
+[    1.087729] Warning: unable to open an initial console.
+[    1.268949] UBIFS (ubi0:0): UBIFS: mounted UBI device 0, volume 0, name "rootfs", R/O mode
+[    1.268965] UBIFS (ubi0:0): LEB size: 253952 bytes (248 KiB), min./max. I/O unit sizes: 4096 bytes/4096 bytes
+[    1.268973] UBIFS (ubi0:0): FS size: 113008640 bytes (107 MiB, 445 LEBs), journal size 9404416 bytes (8 MiB, 38 LEBs)
+[    1.268978] UBIFS (ubi0:0): reserved for root: 0 bytes (0 KiB)
+[    1.268985] UBIFS (ubi0:0): media format: w4/r0 (latest is w5/r0), UUID 81357DFC-2EC6-4DBC-A723-CE15C5AE4769, small LPT model
+[    1.272470] VFS: Mounted root (ubifs filesystem) readonly on device 0:17.
+[    1.275936] devtmpfs: mounted
+[    1.277214] Freeing unused kernel memory: 1024K
+[    1.696945] audit: type=1404 audit(5.099:2): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[    1.794382] SELinux: 8192 avtab hash slots, 28825 rules.
+[    1.813454] SELinux: 8192 avtab hash slots, 28825 rules.
+[    1.815742] SELinux:  6 users, 9 roles, 1960 types, 83 bools, 16 sens, 1024 cats
+[    1.815753] SELinux:  123 classes, 28825 rules
+[    1.820440] SELinux:  Permission getrlimit in class process not defined in policy.
+[    1.820456] SELinux:  Class process2 not defined in policy.
+[    1.820507] SELinux:  Permission map in class file not defined in policy.
+[    1.820524] SELinux:  Permission map in class dir not defined in policy.
+[    1.820540] SELinux:  Permission map in class lnk_file not defined in policy.
+[    1.820552] SELinux:  Permission map in class chr_file not defined in policy.
+[    1.820563] SELinux:  Permission map in class blk_file not defined in policy.
+[    1.820575] SELinux:  Permission map in class sock_file not defined in policy.
+[    1.820586] SELinux:  Permission map in class fifo_file not defined in policy.
+[    1.820602] SELinux:  Permission map in class socket not defined in policy.
+[    1.820616] SELinux:  Permission map in class tcp_socket not defined in policy.
+[    1.820629] SELinux:  Permission map in class udp_socket not defined in policy.
+[    1.820640] SELinux:  Permission map in class rawip_socket not defined in policy.
+[    1.820657] SELinux:  Permission map in class netlink_socket not defined in policy.
+[    1.820668] SELinux:  Permission map in class packet_socket not defined in policy.
+[    1.820678] SELinux:  Permission map in class key_socket not defined in policy.
+[    1.820689] SELinux:  Permission map in class unix_stream_socket not defined in policy.
+[    1.820700] SELinux:  Permission map in class unix_dgram_socket not defined in policy.
+[    1.820731] SELinux:  Permission map in class netlink_route_socket not defined in policy.
+[    1.820740] SELinux:  Permission nlmsg_readpriv in class netlink_route_socket not defined in policy.
+[    1.820748] SELinux:  Permission map in class netlink_tcpdiag_socket not defined in policy.
+[    1.820760] SELinux:  Permission map in class netlink_nflog_socket not defined in policy.
+[    1.820771] SELinux:  Permission map in class netlink_xfrm_socket not defined in policy.
+[    1.820784] SELinux:  Permission map in class netlink_selinux_socket not defined in policy.
+[    1.820794] SELinux:  Permission map in class netlink_iscsi_socket not defined in policy.
+[    1.820805] SELinux:  Permission map in class netlink_audit_socket not defined in policy.
+[    1.820820] SELinux:  Permission map in class netlink_fib_lookup_socket not defined in policy.
+[    1.820830] SELinux:  Permission map in class netlink_connector_socket not defined in policy.
+[    1.820841] SELinux:  Permission map in class netlink_netfilter_socket not defined in policy.
+[    1.820853] SELinux:  Permission map in class netlink_dnrt_socket not defined in policy.
+[    1.820867] SELinux:  Permission map in class netlink_kobject_uevent_socket not defined in policy.
+[    1.820878] SELinux:  Permission map in class netlink_generic_socket not defined in policy.
+[    1.820889] SELinux:  Permission map in class netlink_scsitransport_socket not defined in policy.
+[    1.820900] SELinux:  Permission map in class netlink_rdma_socket not defined in policy.
+[    1.820910] SELinux:  Permission map in class netlink_crypto_socket not defined in policy.
+[    1.820921] SELinux:  Permission map in class appletalk_socket not defined in policy.
+[    1.820940] SELinux:  Permission map in class dccp_socket not defined in policy.
+[    1.820962] SELinux:  Permission map in class tun_socket not defined in policy.
+[    1.820992] SELinux:  Permission map in class sctp_socket not defined in policy.
+[    1.821003] SELinux:  Permission map in class icmp_socket not defined in policy.
+[    1.821014] SELinux:  Permission map in class ax25_socket not defined in policy.
+[    1.821024] SELinux:  Permission map in class ipx_socket not defined in policy.
+[    1.821034] SELinux:  Permission map in class netrom_socket not defined in policy.
+[    1.821044] SELinux:  Permission map in class atmpvc_socket not defined in policy.
+[    1.821055] SELinux:  Permission map in class x25_socket not defined in policy.
+[    1.821066] SELinux:  Permission map in class rose_socket not defined in policy.
+[    1.821076] SELinux:  Permission map in class decnet_socket not defined in policy.
+[    1.821086] SELinux:  Permission map in class atmsvc_socket not defined in policy.
+[    1.821096] SELinux:  Permission map in class rds_socket not defined in policy.
+[    1.821106] SELinux:  Permission map in class irda_socket not defined in policy.
+[    1.821116] SELinux:  Permission map in class pppox_socket not defined in policy.
+[    1.821126] SELinux:  Permission map in class llc_socket not defined in policy.
+[    1.821136] SELinux:  Permission map in class can_socket not defined in policy.
+[    1.821147] SELinux:  Permission map in class tipc_socket not defined in policy.
+[    1.821158] SELinux:  Permission map in class bluetooth_socket not defined in policy.
+[    1.821168] SELinux:  Permission map in class iucv_socket not defined in policy.
+[    1.821178] SELinux:  Permission map in class rxrpc_socket not defined in policy.
+[    1.821188] SELinux:  Permission map in class isdn_socket not defined in policy.
+[    1.821198] SELinux:  Permission map in class phonet_socket not defined in policy.
+[    1.821208] SELinux:  Permission map in class ieee802154_socket not defined in policy.
+[    1.821219] SELinux:  Permission map in class caif_socket not defined in policy.
+[    1.821229] SELinux:  Permission map in class alg_socket not defined in policy.
+[    1.821239] SELinux:  Permission map in class nfc_socket not defined in policy.
+[    1.821250] SELinux:  Permission map in class vsock_socket not defined in policy.
+[    1.821260] SELinux:  Permission map in class kcm_socket not defined in policy.
+[    1.821270] SELinux:  Permission map in class qipcrtr_socket not defined in policy.
+[    1.821276] SELinux:  Class smc_socket not defined in policy.
+[    1.821280] SELinux:  Class infiniband_pkey not defined in policy.
+[    1.821284] SELinux:  Class infiniband_endport not defined in policy.
+[    1.821287] SELinux:  Class bpf not defined in policy.
+[    1.821291] SELinux:  Class perf_event not defined in policy.
+[    1.821295] SELinux: the above unknown classes and permissions will be allowed
+[    1.822091] SELinux:  policy capability network_peer_controls=1
+[    1.822097] SELinux:  policy capability open_perms=1
+[    1.822100] SELinux:  policy capability extended_socket_class=0
+[    1.822104] SELinux:  policy capability always_check_network=0
+[    1.822108] SELinux:  policy capability cgroup_seclabel=0
+[    1.822111] SELinux:  policy capability nnp_nosuid_transition=0
+[    1.822116] SELinux:  Completing initialization.
+[    1.822117] SELinux:  Setting up existing superblocks.
+[    1.956790] audit: type=1403 audit(5.359:3): policy loaded auid=4294967295 ses=4294967295
+[    1.971329] systemd[1]: Successfully loaded SELinux policy in 288.964ms.
+[    2.063620] systemd[1]: System time before build time, advancing clock.
+[    2.211566] systemd[1]: Relabelled /dev, /run and /sys/fs/cgroup in 100.774ms.
+[    2.260258] systemd[1]: systemd 239 running in system mode. (-PAM +AUDIT +SELINUX +IMA -APPARMOR -SMACK +SYSVINIT -UTMP -LIBCRYPTSETUP -GCRYPT -GNUTLS +ACL +XZ -LZ4 -SECCOMP +BLKID -ELFUTILS -KMOD -IDN2 -IDN -PCRE2 default-hierarchy=hybrid)
+[    2.262794] systemd[1]: Detected architecture arm.
+[    2.290313] systemd[1]: Set hostname to <sdxprairie>.
+[    2.307857] systemd[1]: Initializing machine ID from random generator.
+[    2.309639] systemd[1]: Installed transient /etc/machine-id file.
+[    3.449381] systemd[1]: File /lib/systemd/system/systemd-logind.service:37 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[    3.449408] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[    3.523154] systemd[1]: Configuration file /etc/systemd/system/oapps.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+[    3.644379] systemd[1]: systemd-journald-audit.socket: Socket service systemd-journald.service not loaded, refusing.
+[    3.644425] systemd[1]: Failed to listen on Journal Audit Socket.
+[    3.664058] systemd[187]: chgrp-diag.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    3.669312] systemd[188]: firmware-mount.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    3.670982] systemd[189]: systemd-sysctl.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    3.687247] systemd[190]: systemd-random-seed.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    3.871319] systemd[191]: systemrw.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    3.917933] systemd[192]: firmware-mount.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    3.981223] UBIFS (ubi0:3): recovery needed
+[    4.090073] UBIFS (ubi0:3): background thread "ubifs_bgt0_3" started, PID 195
+[    4.152319] UBIFS (ubi0:3): recovery completed
+[    4.152444] UBIFS (ubi0:3): UBIFS: mounted UBI device 0, volume 3, name "systemrw"
+[    4.152453] UBIFS (ubi0:3): LEB size: 253952 bytes (248 KiB), min./max. I/O unit sizes: 4096 bytes/4096 bytes
+[    4.152461] UBIFS (ubi0:3): FS size: 4063232 bytes (3 MiB, 16 LEBs), journal size 1777665 bytes (1 MiB, 5 LEBs)
+[    4.152466] UBIFS (ubi0:3): reserved for root: 191915 bytes (187 KiB)
+[    4.152473] UBIFS (ubi0:3): media format: w5/r0 (latest is w5/r0), UUID D903E20B-2FBF-4053-B0A6-132530453A22, small LPT model
+[    4.333742] ubi1: attaching mtd16
+[    4.451738] ubi1: scanning is finished
+[    4.459320] ubi1: attached mtd16 (name "modem", size 97 MiB)
+[    4.459333] ubi1: PEB size: 262144 bytes (256 KiB), LEB size: 253952 bytes
+[    4.459339] ubi1: min./max. I/O unit sizes: 4096/4096, sub-page size 4096
+[    4.459345] ubi1: VID header offset: 4096 (aligned 4096), data offset: 8192
+[    4.459350] ubi1: good PEBs: 389, bad PEBs: 0, corrupted PEBs: 0
+[    4.459355] ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    4.459362] ubi1: max/mean erase counter: 1/0, WL threshold: 4096, image sequence number: 1884455148
+[    4.459368] ubi1: available PEBs: 0, total reserved PEBs: 389, PEBs reserved for bad PEB handling: 20
+[    4.460804] ubi1: background thread "ubi_bgt1d" started, PID 206
+[    4.669140] UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "modem", R/O mode
+[    4.669157] UBIFS (ubi1:0): LEB size: 253952 bytes (248 KiB), min./max. I/O unit sizes: 4096 bytes/4096 bytes
+[    4.669165] UBIFS (ubi1:0): FS size: 90152960 bytes (85 MiB, 355 LEBs), journal size 9404416 bytes (8 MiB, 38 LEBs)
+[    4.669171] UBIFS (ubi1:0): reserved for root: 0 bytes (0 KiB)
+[    4.669178] UBIFS (ubi1:0): media format: w4/r0 (latest is w5/r0), UUID 20C7A368-1C13-4C7E-A09A-EA8377DCCF29, small LPT model
+[    4.681375] systemd[209]: tmp.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.683841] systemd[210]: sys-kernel-debug.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.686310] systemd[211]: irsc_util.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.721430] systemd[212]: netmgrd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.744025] systemd[204]: qrtr_ns.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.755860] systemd[213]: start_stop_ipa_fws.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.764756] systemd[214]: QCMAP_Bootup.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.774354] systemd[215]: ssreq-server.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.789347] systemd[216]: systemd-tmpfiles-setup-dev.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.816989] systemd[217]: sys-kernel-config.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    4.835036] systemd[218]: QCMAP_copybind.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.153591] systemd[225]: start_stop_ipa_fws.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.154927] systemd[226]: QCMAP_copybind.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.378935] QCMAP_Bootup:Start Main
+[    5.379799] systemd-sysctl[189]: Couldn't write 'fq_codel' to 'net/core/default_qdisc', ignoring: No such file or directory
+[    5.442225] audit: type=1400 audit(1680364359.369:4): avc:  denied  { read } for  pid=215 comm="ssreq_server" name="filesystems" dev="proc" ino=4026531993 scontext=system_u:system_r:ssreq_server_t:s0-s15:c0.c1023 tcontext=system_u:object_r:proc_t:s0 tclass=file permissive=0
+[    5.584321] QCMAP_Bootup:Start DHCP server
+[    5.599766] systemd[238]: start_stop_ipa_fws.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.613498] systemd[239]: start_stop_ipa_fws.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.614990] systemd[240]: QCMAP_copybind.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.678390] QCMAP_Bootup:Start dnsmasq failed
+[    5.692614] audit: type=1400 audit(1680364359.619:5): avc:  denied  { dac_override } for  pid=248 comm="sh" capability=1  scontext=system_u:system_r:qcmap_cm_t:s0-s15:c0.c1023 tcontext=system_u:system_r:qcmap_cm_t:s0-s15:c0.c1023 tclass=capability permissive=0
+[    5.696427] systemd[246]: start_stop_ipa_fws.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.766313] IPA is loading with MHI configuration
+[    5.781678] systemd[252]: QCMAP_copybind.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.848386] systemd[255]: systemd-udevd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.887984] systemd[256]: data.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.901371] systemd[257]: persist.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.940258] UBIFS (ubi0:1): background thread "ubifs_bgt0_1" started, PID 258
+[    5.942891] systemd[259]: var-volatile.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.991629] systemd[260]: QCMAP_copybind.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    5.996087] UBIFS (ubi0:4): background thread "ubifs_bgt0_4" started, PID 261
+[    6.225419] UBIFS (ubi0:1): recovery needed
+[    6.275237] UBIFS (ubi0:4): recovery needed
+[    6.314573] systemd-udevd[255]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+[    6.568445] systemd-udevd[255]: Specified group 'render' unknown
+[    6.569143] systemd-udevd[255]: Specified group 'kvm' unknown
+[    6.593213] audit: type=1400 audit(1680364360.519:6): avc:  denied  { read } for  pid=212 comm="netmgrd" name="localtime" dev="ubifs" ino=9137 scontext=system_u:system_r:qnetmgrd_t:s0-s15:c0.c1023 tcontext=system_u:object_r:etc_t:s0 tclass=lnk_file permissive=0
+[    6.596837] UBIFS (ubi0:4): recovery completed
+[    6.596948] UBIFS (ubi0:4): UBIFS: mounted UBI device 0, volume 4, name "persist"
+[    6.596957] UBIFS (ubi0:4): LEB size: 253952 bytes (248 KiB), min./max. I/O unit sizes: 4096 bytes/4096 bytes
+[    6.596965] UBIFS (ubi0:4): FS size: 4063232 bytes (3 MiB, 16 LEBs), journal size 1777665 bytes (1 MiB, 5 LEBs)
+[    6.596971] UBIFS (ubi0:4): reserved for root: 191915 bytes (187 KiB)
+[    6.596978] UBIFS (ubi0:4): media format: w5/r0 (latest is w5/r0), UUID F006D10D-F897-44A1-B0A2-DB8C5B79C85F, small LPT model
+[    6.624373] systemd[269]: label-persist.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    6.769000] systemd-udevd[255]: Invalid rule /lib/udev/rules.d/80-drivers.rules:5: RUN{builtin}: 'kmod load $env{MODALIAS}' unknown
+[    6.769045] systemd-udevd[255]: Invalid rule /lib/udev/rules.d/80-drivers.rules:6: RUN{builtin}: 'kmod load tifm_sd' unknown
+[    6.769068] systemd-udevd[255]: Invalid rule /lib/udev/rules.d/80-drivers.rules:7: RUN{builtin}: 'kmod load tifm_ms' unknown
+[    6.769090] systemd-udevd[255]: Invalid rule /lib/udev/rules.d/80-drivers.rules:8: RUN{builtin}: 'kmod load ms_block mspro_block' unknown
+[    6.769111] systemd-udevd[255]: Invalid rule /lib/udev/rules.d/80-drivers.rules:9: RUN{builtin}: 'kmod load i2o_block' unknown
+[    6.769134] systemd-udevd[255]: Invalid rule /lib/udev/rules.d/80-drivers.rules:10: RUN{builtin}: 'kmod load ppdev' unknown
+[    6.769157] systemd-udevd[255]: Invalid rule /lib/udev/rules.d/80-drivers.rules:11: RUN{builtin}: 'kmod load sm_ftl' unknown
+[    6.880236] UBIFS (ubi0:1): recovery completed
+[    6.880391] UBIFS (ubi0:1): UBIFS: mounted UBI device 0, volume 1, name "usrfs"
+[    6.880401] UBIFS (ubi0:1): LEB size: 253952 bytes (248 KiB), min./max. I/O unit sizes: 4096 bytes/4096 bytes
+[    6.880409] UBIFS (ubi0:1): FS size: 164560896 bytes (156 MiB, 648 LEBs), journal size 9404416 bytes (8 MiB, 38 LEBs)
+[    6.880415] UBIFS (ubi0:1): reserved for root: 0 bytes (0 KiB)
+[    6.880422] UBIFS (ubi0:1): media format: w4/r0 (latest is w5/r0), UUID 403C4C86-B365-4639-9319-7A317FC1E021, small LPT model
+[    6.911526] systemd[272]: label-data.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.007306] systemd[278]: pcie.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.011561] systemd[280]: tftp_server.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.021486] systemd[281]: systemd-tmpfiles-setup.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.068384] audit: type=1400 audit(1680364360.989:7): avc:  denied  { read } for  pid=280 comm="tftp_server" name="localtime" dev="ubifs" ino=9137 scontext=system_u:system_r:tftp_server_t:s0-s15:c0.c1023 tcontext=system_u:object_r:etc_t:s0 tclass=lnk_file permissive=0
+[    7.153454] systemd[285]: pcie.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.204889] Debug transport mode is set to usb. Update /data/debug_transport.conf to pcie and reboot to switch
+[    7.221450] systemd[287]: usb.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.287071] systemd-tmpfiles[281]: symlink(/etc/machine-id, /var/lib/dbus/machine-id) failed: Read-only file system
+[    7.295431] audit: type=1400 audit(1680364361.219:8): avc:  denied  { getattr } for  pid=281 comm="systemd-tmpfile" path="/oatptmp" dev="ubifs" ino=9767 scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023 tcontext=system_u:object_r:default_t:s0 tclass=lnk_file permissive=0
+[    7.312932] systemd[290]: usb.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.325002] systemd[292]: usb.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.404297] systemd-tmpfiles[281]: /srv does not exist and cannot be created as the file system is read-only.
+[    7.413729] systemd[299]: usb.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.552916] Mass Storage Function, version: 2009/09/11
+[    7.552935] LUN: removable file: (no medium)
+[    7.556283] Mass Storage Function, version: 2009/09/11
+[    7.556302] LUN: removable file: (no medium)
+[    7.563042] file system registered
+[    7.589888] f_cdev_alloc: port_name:at_usb0 (00000000) portno:(0)
+[    7.604679] f_cdev_alloc: port_name:at_usb1 (00000000) portno:(1)
+[    7.783512] audit: type=1400 audit(1680364361.709:9): avc:  denied  { dac_read_search } for  pid=281 comm="systemd-tmpfile" capability=2  scontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023 tcontext=system_u:system_r:systemd_tmpfiles_t:s0-s15:c0.c1023 tclass=capability permissive=0
+[    7.822426] systemd[1]: Started Create Volatile Files and Directories.
+[    7.830833] systemd[1]: Starting IPACM Service...
+[    7.831073] systemd[1]: Reached target System Initialization.
+[    7.833299] systemd[360]: ipacm.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    7.853063] systemd[1]: Listening on D-Bus System Message Bus Socket.
+[    7.856279] systemd[1]: Started D-Bus System Message Bus.
+[    7.857739] systemd[361]: dbus.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.033052] systemd[1]: Started Daily Cleanup of Temporary Directories.
+[    8.033224] systemd[1]: Reached target Timers.
+[    8.342915] Switching to composition number 0x901F
+[    8.390512] usb.service initialized successfully
+[    8.461367] configfs-gadget a600000.dwc3: failed to start g1: -19
+[    8.518431] systemd[1]: Started usb Service.
+[    8.529461] systemd[410]: ipacm.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.531629] systemd[411]: adbd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.532256] systemd[1]: Starting adbd Service...
+[    8.536904] systemd[1]: Starting QTI Mobile Broadband Service...
+[    8.556722] Launch adb is starting adbd... 
+[    8.568971] systemd[412]: mbimd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.593197] systemd[413]: mbimd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.604714] systemd[417]: ipacm.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.615063] systemd[418]: mbimd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.654787] systemd[419]: mbimd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.666731] systemd[422]: ipacm.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.695275] systemd[423]: QCMAP_ConnectionManagerd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.715272] systemd[425]: QCMAP_ConnectionManagerd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.752112] systemd[426]: mbimd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    8.768003] Started adbd. 
+[    8.825436] systemd[427]: mbimd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    9.077008] read descriptors
+[    9.077104] read strings
+[    9.084732] android_work: did not send uevent (0 0 00000000)
+[    9.205292] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.220182] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.220814] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.221385] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.221934] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.544460] netlink: 8 bytes leftover after parsing attributes in process `QCMAP_Connectio'.
+[    9.628853] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.629687] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.630367] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.630947] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.650472] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.651262] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.651845] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.652413] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.745741] audit: type=1107 audit(1680364363.669:10): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0-s15:c0.c1023 msg='avc:  denied  { stop } for auid=n/a uid=1001 gid=1001 cmdline="/usr/bin/QCMAP_ConnectionManager /etc/data/mobileap_cfg.xml d" scontext=system_u:system_r:qcmap_cm_t:s0-s15:c0.c1023 tcontext=system_u:system_r:init_t:s0-s15:c0.c1023 tclass=system permissive=0
+[    9.745741]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[    9.787947] audit: type=1107 audit(1680364363.709:11): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0-s15:c0.c1023 msg='avc:  denied  { stop } for auid=n/a uid=1001 gid=1001 cmdline="/usr/bin/QCMAP_ConnectionManager /etc/data/mobileap_cfg.xml d" scontext=system_u:system_r:qcmap_cm_t:s0-s15:c0.c1023 tcontext=system_u:system_r:init_t:s0-s15:c0.c1023 tclass=system permissive=0
+[    9.787947]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[    9.805469] systemd[470]: init_sys_mss.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    9.818984] subsys-restart: __subsystem_get(): Changing subsys fw_name to modem
+[    9.819024] ipa-wan ipa3_lcl_mdm_ssr_notifier_cb:3162 IPA received MPSS BEFORE_POWERUP
+[    9.820328] ipa ipa3_uc_state_check:382 uC is not loaded
+[    9.820356] ipa-wan ipa3_lcl_mdm_ssr_notifier_cb:3174 IPA BEFORE_POWERUP handling is complete
+[    9.820923] systemd[472]: init_sys_mss.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[    9.847365] subsys-pil-tz 4080000.qcom,mss: modem: loading from 0x90800000 to 0xa0000000
+[   11.488441] audit: type=1107 audit(1680364365.409:12): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0-s15:c0.c1023 msg='avc:  denied  { start } for auid=n/a uid=1001 gid=1001 cmdline="/usr/bin/QCMAP_ConnectionManager /etc/data/mobileap_cfg.xml d" scontext=system_u:system_r:qcmap_cm_t:s0-s15:c0.c1023 tcontext=system_u:system_r:init_t:s0-s15:c0.c1023 tclass=system permissive=0
+[   11.488441]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[   13.292903] audit: type=1107 audit(1680364367.219:13): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0-s15:c0.c1023 msg='avc:  denied  { reload } for auid=n/a uid=1001 gid=1001 cmdline="/usr/bin/QCMAP_ConnectionManager /etc/data/mobileap_cfg.xml d" scontext=system_u:system_r:qcmap_cm_t:s0-s15:c0.c1023 tcontext=system_u:system_r:init_t:s0-s15:c0.c1023 tclass=system permissive=0
+[   13.292903]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[   16.042545] device bridge0 entered promiscuous mode
+[   17.405882] subsys-pil-tz 4080000.qcom,mss: modem: Brought out of reset
+[   17.456087] subsys-pil-tz 4080000.qcom,mss: Subsystem error monitoring/handling services are up
+[   17.456108] subsys-pil-tz 4080000.qcom,mss: modem: Power/Clock ready interrupt received
+[   17.460981] ipa-wan ipa3_lcl_mdm_ssr_notifier_cb:3177 IPA received MPSS AFTER_POWERUP
+[   17.460999] ipa ipa3_odl_pipe_open:371 adpl pipe not configured
+[   17.461006] ipa-wan ipa3_lcl_mdm_ssr_notifier_cb:3183 IPA AFTER_POWERUP handling is complete
+[   17.461164] audit: type=1400 audit(1680364371.389:14): avc:  denied  { search } for  pid=470 comm="init_mss" name="ipc_logging" dev="debugfs" ino=48 scontext=system_u:system_r:mss_t:s0-s15:c0.c1023 tcontext=system_u:object_r:debugfs_t:s0 tclass=dir permissive=0
+[   17.470228] qrtr: Modem QMI Readiness RX cmd:0x2 node[0x3]
+[   17.479138] sysmon-qmi: ssctl_new_server: Connection established between QMI handle and modem's SSCTL service
+[   17.525103] coresight-remote-etm soc:modem_etm0: Connection established between QMI handle and 2 service
+[   17.525129] coresight-remote-etm soc:modem_etm1: Connection established between QMI handle and 2 service
+[   17.536244] diag: In diag_send_feature_mask_update, control channel is not open, p: 0, 00000000
+[   17.536672] diag: In diag_send_peripheral_buffering_mode, buffering flag not set for 0
+[   17.758351] Sending QMI_IPA_INIT_MODEM_DRIVER_REQ_V01
+[   17.762217] ipa-wan ipa3_handle_indication_req:152 not send indication
+[   17.781179] ipa ipa3_uc_wdi_event_log_info_handler:357 WDI protocol missing 0x21
+[   17.781198] ipa ipa3_uc_ntn_event_log_info_handler:33 NTN stats sz invalid exp=224 is=112
+[   17.785535] QMI_IPA_INIT_MODEM_DRIVER_REQ_V01 response received
+[   17.997038] netlink: 4 bytes leftover after parsing attributes in process `QCMAP_Connectio'.
+[   19.163480] ipa-wan ipa3_wwan_ioctl:2045 dev(rmnet_data0) register to IPA
+[   21.845270] systemd[1]: Started Modem Init Service.
+[   21.846895] systemd[1]: Reached target Sockets.
+[   21.851563] systemd[1]: Starting Bind mount volatile /etc/data/ipa/...
+[   21.853594] systemd[828]: systemrw-data-ipa.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   21.866837] systemd[1]: Starting Bind mount volatile /etc/data/adpl/...
+[   21.873788] systemd[830]: systemrw-data-adpl.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   21.875302] systemd[831]: systemrw-data.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   21.876327] systemd[1]: Starting Bind mount volatile /etc/data/...
+[   21.901519] systemd[836]: systemrw-boot_hsic_comp.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   21.902825] systemd[1]: Starting Bind mount volatile /etc/usb/boot_hsic_comp...
+[   21.907936] systemd[837]: systemrw-data-usb.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   21.930690] systemd[1]: Starting Bind mount volatile /etc/data/usb/...
+[   21.943896] systemd[842]: systemd-udev-trigger.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   21.960764] systemd[1]: Starting udev Coldplug all Devices...
+[   22.046991] systemd[1]: Started Bind mount volatile /etc/usb/boot_hsic_comp.
+[   22.132573] systemd[1]: Started Bind mount volatile /etc/data/ipa/.
+[   22.595258] systemd[936]: systemd-udev-trigger.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.471460] systemd[1004]: pcie-diag.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.485759] pcie-diag is invoked
+[   23.496984] systemd[1005]: port_bridge.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.498558] systemd[1007]: qce_dlkm.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.505902] systemd[1008]: qmuxbridged.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.520716] pcie-diag: Debug transport for Diag is usb
+[   23.520805] pcie-diag: test_diag is not invoked
+[   23.535097] systemd[1010]: qmuxbridged.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.541576] systemd[1011]: qmi_ip_multiclientd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.586809] systemd[1013]: reboot-daemon.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.590881] Starting/Loading crypto modules: 
+[   23.664053] systemd[1014]: cache.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.671450] systemd[1016]: qseecomd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.684745] systemd[1017]: atfwd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.750147] UBIFS (ubi0:2): background thread "ubifs_bgt0_2" started, PID 1026
+[   23.753739] systemd[1023]: ipacm_perf.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.770601] systemd[1028]: misc_daemon.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.784539] systemd[1029]: thermal-engine.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.835046] systemd[1031]: busybox-syslog.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.849051] systemd[1033]: audio.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.895631] systemd[1034]: adpld.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.897566] audit: type=1400 audit(1680364377.819:15): avc:  denied  { read } for  pid=1008 comm="qmuxbridge" name="localtime" dev="ubifs" ino=9137 scontext=system_u:system_r:qmuxbridge_t:s0-s15:c0.c1023 tcontext=system_u:object_r:etc_t:s0 tclass=lnk_file permissive=0
+[   23.955491] systemd[1040]: init_audio.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   23.974948] systemd[1041]: diag-reboot-app.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.052303] audio:start/load
+[   24.078374] systemd[1053]: location_hal_daemon.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.085236] systemd[1057]: embmsd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.106591] systemd[1060]: data-init.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.137817] systemd[1062]: qti_pppd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.141400] systemd[1064]: fs-scrub-daemon.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.216027] systemd[1065]: qtid.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.248742] systemd[1067]: systemd-logind.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.305342] systemd[1071]: qmuxbridged.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.338893] systemd[1073]: adpld.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.352407] systemd[1074]: init_audio.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.371572] systemd[1075]: oapps.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.379621] UBIFS (ubi0:2): recovery needed
+[   24.441631] systemd[1076]: sfsconfig.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.461822] embms:start/load
+[   24.555382] systemd[1087]: qti_pppd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.621459] audit: type=1400 audit(1680364378.549:16): avc:  denied  { read } for  pid=1089 comm="syslogd" name="oatptmp" dev="ubifs" ino=9767 scontext=system_u:system_r:syslogd_t:s0-s15:c0.c1023 tcontext=system_u:object_r:default_t:s0 tclass=lnk_file permissive=0
+[   24.622985] systemd[1088]: qtid.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   24.775953] embms_kernel: loading out-of-tree module taints kernel.
+[   24.842678] iommu: Adding device 1de0000.qcedev to group 5
+[   24.846159] register_client_adhoc:find path.src 125 dest 512
+[   24.846318] register_client_adhoc:Client handle 15 qcedev-noc
+[   24.850214] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
+[   24.851574] qce 1de0000.qcedev: QTI Crypto 5.4.2 device found @0x1de0000
+[   24.851923] sps:BAM 0x01dc4000 is registered.
+[   24.877697] sps:BAM 0x01dc4000 (va:0x00000000) enabled: ver:0x27, number of pipes:16
+[   24.878486] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001dc4000 irq 33
+[   24.915183] audit: type=1400 audit(1680364378.839:17): avc:  denied  { read } for  pid=1017 comm="atfwd_daemon" name="localtime" dev="ubifs" ino=9137 scontext=system_u:system_r:atfwd_t:s0-s15:c0.c1023 tcontext=system_u:object_r:etc_t:s0 tclass=lnk_file permissive=0
+[   24.922492] systemd[1099]: qtid.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   25.008697] audit: type=1400 audit(1680364378.929:18): avc:  denied  { read } for  pid=1055 comm="qseecomd" name="localtime" dev="ubifs" ino=9137 scontext=system_u:system_r:qseecomd_t:s0-s15:c0.c1023 tcontext=system_u:object_r:etc_t:s0 tclass=lnk_file permissive=0
+[   25.058292] systemd[1116]: init_audio.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   25.265043] audit: type=1404 audit(1680364379.189:19): enforcing=0 old_enforcing=1 auid=4294967295 ses=4294967295
+[   25.291222] audit: type=1400 audit(1680364379.219:20): avc:  denied  { read } for  pid=361 comm="dbus-daemon" name="oatptmp" dev="ubifs" ino=9767 scontext=system_u:system_r:system_dbusd_t:s0-s15:c0.c1023 tcontext=system_u:object_r:default_t:s0 tclass=lnk_file permissive=1
+[   25.306848] iommu: Adding device 1de0000.qcrypto to group 6
+[   25.307041] register_client_adhoc:find path.src 125 dest 512
+[   25.307211] register_client_adhoc:Client handle 16 qcrypto-noc
+[   25.307477] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
+[   25.308749] qcrypto 1de0000.qcrypto: QTI Crypto 5.4.2 device found @0x1de0000
+[   25.342044] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001dc4000 irq 33
+[   25.350792] qcrypto 1de0000.qcrypto: qcrypto-ecb-aes
+[   25.350917] qcrypto 1de0000.qcrypto: qcrypto-cbc-aes
+[   25.351017] qcrypto 1de0000.qcrypto: qcrypto-ctr-aes
+[   25.351104] qcrypto 1de0000.qcrypto: qcrypto-ecb-des
+[   25.351189] qcrypto 1de0000.qcrypto: qcrypto-cbc-des
+[   25.351273] qcrypto 1de0000.qcrypto: qcrypto-ecb-3des
+[   25.367536] systemd[1141]: init_audio.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   25.369057] qcrypto 1de0000.qcrypto: qcrypto-cbc-3des
+[   25.369665] qcrypto 1de0000.qcrypto: qcrypto-xts-aes
+[   25.369819] qcrypto 1de0000.qcrypto: qcrypto-sha1
+[   25.380441] qcrypto 1de0000.qcrypto: qcrypto-sha256
+[   25.380624] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-aes
+[   25.390987] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-des
+[   25.426939] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-3des
+[   25.428619] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-aes
+[   25.428772] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-des
+[   25.429137] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-3des
+[   25.429273] qcrypto 1de0000.qcrypto: qcrypto-hmac-sha1
+[   25.429366] qcrypto 1de0000.qcrypto: qcrypto-hmac-sha256
+[   25.469885] qcrypto 1de0000.qcrypto: qcrypto-aes-ccm
+[   25.470316] qcrypto 1de0000.qcrypto: qcrypto-rfc4309-aes-ccm
+[   25.490736] audit: type=1400 audit(1680364379.409:21): avc:  denied  { read } for  pid=1124 comm="fs-scrub-daemon" name="localtime" dev="ubifs" ino=9137 scontext=system_u:system_r:fs_scrub_daemon_t:s0-s15:c0.c1023 tcontext=system_u:object_r:etc_t:s0 tclass=lnk_file permissive=1
+[   25.490759] audit: type=1400 audit(1680364379.409:22): avc:  denied  { read } for  pid=1124 comm="fs-scrub-daemon" name="oatptmp" dev="ubifs" ino=9767 scontext=system_u:system_r:fs_scrub_daemon_t:s0-s15:c0.c1023 tcontext=system_u:object_r:default_t:s0 tclass=lnk_file permissive=1
+[   25.492893] systemd-logind[1067]: New seat seat0.
+[   25.510840] audit: type=1400 audit(1680364379.439:23): avc:  denied  { getattr } for  pid=1124 comm="fs-scrub-daemon" scontext=system_u:system_r:fs_scrub_daemon_t:s0-s15:c0.c1023 tcontext=system_u:system_r:fs_scrub_daemon_t:s0-s15:c0.c1023 tclass=socket permissive=1
+[   25.513358] audit: type=1400 audit(1680364379.439:24): avc:  denied  { setopt } for  pid=1124 comm="fs-scrub-daemon" scontext=system_u:system_r:fs_scrub_daemon_t:s0-s15:c0.c1023 tcontext=system_u:system_r:fs_scrub_daemon_t:s0-s15:c0.c1023 tclass=socket permissive=1
+[   25.565680] Done loading crypto modules.
+[   25.572737] msm-dwc3 a600000.ssusb: Could not get usb psy
+[   25.640465] msm-dwc3 a600000.ssusb: DWC3 exited from low power mode
+[   25.776261] systemd[1176]: init_audio.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   25.840635] audio_notifier_init: PDR register failed, ret = -19, disable service
+[   25.888124] systemd[1181]: init_audio.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   26.105102] audio_notifer_reg_service: service SSR_MODEM is in use
+[   26.123972] systemd[1186]: diag-reboot-app.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   26.240137] UBIFS (ubi0:2): recovery completed
+[   26.240328] UBIFS (ubi0:2): UBIFS: mounted UBI device 0, volume 2, name "cachefs"
+[   26.240338] UBIFS (ubi0:2): LEB size: 253952 bytes (248 KiB), min./max. I/O unit sizes: 4096 bytes/4096 bytes
+[   26.240346] UBIFS (ubi0:2): FS size: 13205504 bytes (12 MiB, 52 LEBs), journal size 2031617 bytes (1 MiB, 6 LEBs)
+[   26.240352] UBIFS (ubi0:2): reserved for root: 623728 bytes (609 KiB)
+[   26.240360] UBIFS (ubi0:2): media format: w5/r0 (latest is w5/r0), UUID C8D237E1-C2B1-4CC4-9776-611A398F77C1, small LPT model
+[   26.439105] systemd[1212]: init_audio.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   26.453714] systemd[1213]: label-cache.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   26.544490] systemd[1216]: init_audio.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   26.854695] systemd[1]: Started label-cache.
+[   26.858365] Init module OPANIC v1 
+[   27.509764] systemd[1]: Found device /dev/ttyMSM0.
+[   27.514565] systemd[1]: Started Thermal Engine Service.
+[   27.544666] systemd[1236]: thermal-engine.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   27.575030] systemd[1]: Started Serial Getty on ttyMSM0.
+[   27.612244] systemd[1]: Reached target Login Prompts.
+[   27.689688] systemd[1242]: diag-reboot-app.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   27.694060] systemd[1]: Started diagrebootapp service.
+[   27.717139] systemd-udevd[1207]: Process '/bin/sh -c "chown -R radio:radio /sys/devices/platform/f100000.pinctrl/gpiochip0/gpio/gpio94"' failed with exit code 1.
+[   27.741153] systemd-udevd[1204]: Process '/bin/sh -c "chown -R radio:radio /sys/devices/platform/f100000.pinctrl/gpiochip0/gpio/gpio94"' failed with exit code 1.
+[   27.741643] systemd[1]: Started udev Coldplug all Devices.
+[   27.756780] systemd-udevd[1214]: Process '/bin/sh -c "chown -R radio:radio /sys/devices/platform/f100000.pinctrl/gpiochip0/gpio/gpio94"' failed with exit code 1.
+[   27.815825] systemd-udevd[1208]: Process '/bin/sh -c "chown -R radio:radio /sys/devices/platform/f100000.pinctrl/gpiochip0/gpio/gpio94"' failed with exit code 1.
+[   27.844111] systemd-udevd[1207]: Process '/bin/sh -c "chown -R radio:radio /sys/devices/platform/f100000.pinctrl/gpiochip0/gpio/gpio94"' failed with exit code 1.
+[   27.875069] systemd-logind[1067]: Watching system buttons on /dev/input/event0 (qpnp_pon)
+[   27.980028] systemd[1]: Found device /dev/input/event0.
+[   28.104289] systemd[1261]: qmi_shutdown_modemd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   28.137236] systemd[1]: Started Modem Shutdown Service.
+[   29.252332] systemd[1]: Found device /dev/diag.
+[   29.342910] systemd[1301]: ipacmdiag.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   29.383497] systemd[1237]: serial-getty@ttyMSM0.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   29.925757] kauditd_printk_skb: 5 callbacks suppressed
+[   29.925764] audit: type=1400 audit(1680364383.849:30): avc:  denied  { read } for  pid=1053 comm="LocApiMsgTask" name="oatptmp" dev="ubifs" ino=9767 scontext=system_u:system_r:loc_hald_t:s0-s15:c0.c1023 tcontext=system_u:object_r:default_t:s0 tclass=lnk_file permissive=1
+[   30.638795] systemd-udevd[1209]: Failed to apply ACL on /dev/snd/timer: Operation not supported
+[   32.000078] apr_tal_open: TIMEOUT for APR_CH_CONNECTED event
+[   32.000096] APR: Unable to open handle
+[   32.000102] ocm_core_open: Unable to register CORE
+[   32.060105] q6core_is_avs_up: Timeout. ADSP Audio is not ready
+[   32.060150] q6core_audio: probe of soc:qcom,q6core-audio failed with error -110
+[   32.604600] msm_pcm_probe: dev name soc:qcom,msm-voice-host-pcm
+[   32.619960] msm_audio_ion_alloc: vaddr = 00000000, size=24
+[   32.626264] msm_audio_ion_alloc: vaddr = 00000000, size=8192
+[   32.626286] msm_audio_ion_alloc: vaddr = 00000000, size=24
+[   33.112633] msm-cdc-pinctrl soc:msm_cdc_pinctrl@92: msm_cdc_pinctrl_probe: Cannot get cdc gpio pinctrl:-19
+[   35.476272] audit: type=1400 audit(1680364389.399:31): avc:  denied  { read } for  pid=1073 comm="adpl" name="localtime" dev="ubifs" ino=9137 scontext=system_u:system_r:dataadpl_t:s0-s15:c0.c1023 tcontext=system_u:object_r:etc_t:s0 tclass=lnk_file permissive=1
+[   35.497051] audit: type=1400 audit(1680364389.419:32): avc:  denied  { read } for  pid=1073 comm="adpl" name="oatptmp" dev="ubifs" ino=9767 scontext=system_u:system_r:dataadpl_t:s0-s15:c0.c1023 tcontext=system_u:object_r:default_t:s0 tclass=lnk_file permissive=1
+[   36.115669] audit: type=1400 audit(1680364390.039:33): avc:  denied  { create } for  pid=1469 comm="thermal_level4_" name="thermal.log" scontext=system_u:system_r:init_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[   36.149049] audit: type=1400 audit(1680364390.069:34): avc:  denied  { append } for  pid=1470 comm="thermal_adapt.s" name="thermal.log" dev="ubifs" ino=352 scontext=system_u:system_r:init_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[   36.149070] audit: type=1400 audit(1680364390.069:35): avc:  denied  { open } for  pid=1470 comm="thermal_adapt.s" path="/data/log/thermal.log" dev="ubifs" ino=352 scontext=system_u:system_r:init_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[   36.188312] systemd-udevd[1474]: Process '/bin/sh -c "chown -R radio:radio /sys/devices/platform/f100000.pinctrl/gpiochip0/gpio/gpio94"' failed with exit code 1.
+[   36.201727] systemd-udevd[1473]: Process '/bin/sh -c "chown -R radio:radio /sys/devices/platform/f100000.pinctrl/gpiochip0/gpio/gpio94"' failed with exit code 1.
+[   36.318057] audit: type=1400 audit(1609459200.089:36): avc:  denied  { getattr } for  pid=1495 comm="mkdir" path="/data" dev="ubifs" ino=1 scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=dir permissive=1
+[   36.493281] audit: type=1400 audit(1609459200.269:37): avc:  denied  { append } for  pid=1510 comm="mount" path="/data/log/facdatabak.log" dev="ubifs" ino=356 scontext=system_u:system_r:mount_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[   36.535718] audit: type=1107 audit(1609459200.309:38): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0-s15:c0.c1023 msg='avc:  denied  { stop } for auid=n/a uid=0 gid=0 path="/etc/launch_adbd" cmdline="" scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:adbd_initrc_exec_t:s15:c0.c1023 tclass=service permissive=1
+[   36.535718]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[   36.543570] audit: type=1107 audit(1609459200.319:39): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0-s15:c0.c1023 msg='avc:  denied  { status } for auid=n/a uid=0 gid=0 path="/etc/launch_adbd" cmdline="" scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:adbd_initrc_exec_t:s15:c0.c1023 tclass=service permissive=1
+[   36.543570]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[   36.564718] systemd[1]: Stopping adbd Service...
+[   36.587757] systemd[1]: Stopped adbd Service.
+[   36.741806] EXT4-fs (mtdblock23): mounted filesystem with ordered data mode. Opts: (null)
+[   36.792789] audit: type=1400 audit(1609459200.569:40): avc:  denied  { read } for  pid=1525 comm="tail" name="facdatabak.log" dev="ubifs" ino=356 scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[   37.137129] EXT4-fs (mtdblock23): re-mounted. Opts: data=ordered
+[   37.696971] android_work: did not send uevent (0 0 00000000)
+[   39.104282] EXT4-fs (mtdblock23): re-mounted. Opts: data=ordered
+[   42.646886] kauditd_printk_skb: 12 callbacks suppressed
+[   42.646893] audit: type=1400 audit(1609459206.419:53): avc:  denied  { append } for  pid=1667 comm="equip" name="ftmd.log" dev="ubifs" ino=438 scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[   43.164071] msm-dwc3 a600000.ssusb: Could not get usb psy
+[   43.569137] msm-dwc3 a600000.ssusb: Could not get usb psy
+[   43.569158] android_work: did not send uevent (0 0 00000000)
+[   43.776632] android_work: sent uevent USB_STATE=CONNECTED
+[   43.777750] configfs-gadget gadget: high-speed config #1: c
+[   43.778089] msm-dwc3 a600000.ssusb: Could not get usb psy
+[   43.778327] android_work: sent uevent USB_STATE=CONFIGURED
+[   46.408542] msm-dwc3 a600000.ssusb: Could not get usb psy
+[   47.882702] Switching to composition number 0x901D
+[   47.946777] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946792] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946797] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946802] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946807] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946812] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946816] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946821] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946826] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946831] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946836] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946841] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946846] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946851] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946856] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946861] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946865] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946870] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946875] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946880] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946885] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946890] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946895] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946899] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946905] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946909] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946914] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946919] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946924] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946929] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946934] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946938] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946943] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946948] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946953] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946958] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946963] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946968] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946972] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946977] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946982] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946987] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946992] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.946997] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947002] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947007] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947012] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947016] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947021] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947026] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947031] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947036] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947040] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947045] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947050] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947055] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947060] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947065] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947069] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947074] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947079] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947084] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947089] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947093] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947098] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947103] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947108] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947113] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947117] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947122] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947127] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947132] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947137] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947141] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947146] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947151] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947156] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947161] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947165] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947170] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947175] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947180] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947184] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947190] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947194] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947199] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947204] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947209] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947214] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947219] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947224] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947228] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947233] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947238] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947243] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947248] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947253] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947258] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947262] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947267] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947272] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947277] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947282] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947286] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947291] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947296] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947301] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947306] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947310] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947315] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947320] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947325] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947330] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947334] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947339] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947344] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947349] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947354] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947359] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947363] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947369] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947373] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947378] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947383] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947388] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947393] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947398] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947403] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947407] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947412] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947417] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947422] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947427] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947431] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947436] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947441] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947446] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947450] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947455] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947460] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947465] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947470] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947474] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947479] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947484] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947489] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947493] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947498] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947503] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947508] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947513] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947518] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947522] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947527] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947532] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947537] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947541] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947547] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947552] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947556] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947561] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947566] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947571] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947576] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947581] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947585] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947590] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947595] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947600] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947605] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947610] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947615] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947619] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947624] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947629] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947634] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947639] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947643] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947648] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947653] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947658] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947663] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947668] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947673] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947677] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947682] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947687] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947692] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947696] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947702] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947706] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947711] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947716] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947721] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947726] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947731] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947736] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947740] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947745] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947750] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947755] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947760] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947764] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947769] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947774] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947779] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947784] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947788] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947793] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947798] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947803] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947808] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947812] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947817] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947822] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947827] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947832] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947837] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947841] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947846] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947851] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947856] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947861] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947866] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947871] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947875] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947880] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947885] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947890] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947895] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947900] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947905] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947910] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947915] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947919] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947924] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947929] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947934] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947939] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947944] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947948] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947953] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947958] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947963] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947968] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947973] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947978] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947982] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947988] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947992] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.947997] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948002] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948007] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948012] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948017] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948022] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948026] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948031] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948036] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948041] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948046] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948050] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948055] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948060] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948065] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948070] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948075] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948079] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948084] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948089] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948094] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948099] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948103] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948108] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948113] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948118] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948123] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948127] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948132] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948137] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948142] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948147] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948151] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948156] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948161] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948166] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948170] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948175] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948180] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948185] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948190] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948194] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948199] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948204] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948209] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948214] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948218] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948223] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948228] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948233] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948238] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948242] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948247] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948252] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948257] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948261] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948266] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948271] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948276] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948281] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948285] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948290] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948295] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948300] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948305] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948309] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948314] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948319] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948324] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948329] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948333] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948338] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948343] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948348] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948353] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948357] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948362] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948367] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948372] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948377] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948381] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948386] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948391] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948396] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948401] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948405] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948410] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948415] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948420] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948424] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948429] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948434] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948439] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948444] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948448] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948453] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948458] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948463] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948468] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948472] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948477] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948482] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948487] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948491] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948496] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948501] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948506] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948511] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948516] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948520] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948526] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948530] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948535] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948540] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948545] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948550] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948554] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948559] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948564] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948569] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948573] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948578] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948583] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948588] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948593] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948598] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948602] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948607] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948612] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948617] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948622] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948626] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948631] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948636] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948641] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948645] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948650] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948655] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948660] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948665] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948669] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948674] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948679] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948684] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948689] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948693] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948698] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948703] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948708] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948713] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948717] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948722] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948727] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948732] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948737] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948741] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948746] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948751] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948756] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948761] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948765] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948770] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948775] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948780] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948784] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948789] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948794] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948799] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948804] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948808] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948813] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948818] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948823] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948828] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948833] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948837] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948842] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948847] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948852] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948857] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948861] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948866] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948871] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948876] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948880] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948885] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948890] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948895] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948900] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948904] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948909] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948914] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948919] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948924] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948928] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948933] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948938] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948943] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948948] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948952] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948957] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948962] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948967] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948972] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948976] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948981] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948986] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948991] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.948996] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949000] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949005] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949010] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949015] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949020] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949024] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949029] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949034] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949039] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949044] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949048] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949053] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949058] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949063] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949068] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949072] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949077] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949082] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949087] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949091] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949096] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949101] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949106] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949110] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949115] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949120] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949125] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949130] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949134] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949139] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949144] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949149] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949154] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949158] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949163] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949168] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949173] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949178] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949182] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949187] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949192] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949197] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949202] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949206] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949211] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949216] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949221] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949226] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949230] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949235] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949240] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949245] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949250] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949254] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949259] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949264] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949269] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949273] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949278] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949283] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949288] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949293] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949298] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949302] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949307] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949312] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949317] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949321] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949326] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949331] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949336] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949341] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949345] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949350] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949355] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949480] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949492] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949497] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949502] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949506] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949511] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949516] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949521] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949526] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949530] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949535] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949540] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949545] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949549] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949554] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949559] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949564] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949569] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949574] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949578] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949583] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949588] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949593] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949598] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949603] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949607] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949612] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949617] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949622] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949627] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949632] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949637] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949642] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949646] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949651] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949656] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949661] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949666] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949671] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949676] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949680] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949685] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949690] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949695] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949700] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949705] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949710] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949715] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949720] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949725] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949730] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949735] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949739] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949745] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949749] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949754] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949759] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949765] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949770] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949775] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949780] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949784] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949789] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949794] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949799] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949804] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949809] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949814] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949818] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949823] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949828] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949833] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949838] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949844] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949849] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949854] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949859] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949864] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949870] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949875] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949880] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949885] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949890] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949895] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949900] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949904] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949910] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949914] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949919] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949924] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949929] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949934] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949939] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949944] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949949] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949954] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949959] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949964] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949969] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949974] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949979] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949984] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949989] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949994] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.949998] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.950004] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.950008] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.950014] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.950018] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.950023] configfs-gadget gadget: error in submission: ep1out --> -11
+[   47.991505] audit: type=1107 audit(1609459211.769:54): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0-s15:c0.c1023 msg='avc:  denied  { start } for auid=n/a uid=0 gid=0 path="/etc/launch_adbd" cmdline="" scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:adbd_initrc_exec_t:s15:c0.c1023 tclass=service permissive=1
+[   47.991505]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[   47.994207] configfs-gadget a600000.dwc3: failed to start g1: -19
+[   48.008764] systemd[1]: Starting adbd Service...
+[   48.014424] systemd[2282]: adbd.service: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+[   48.034237] Launch adb is starting adbd... 
+[   48.120776] Started adbd. 
+[   48.122753] systemd[1]: Started adbd Service.
+[   48.209541] read descriptors
+[   48.209637] read strings
+[   48.218679] android_work: sent uevent USB_STATE=DISCONNECTED
+[   61.015709] ep_pcie_reset_init: After Reset assert pcie_core_reset
+[   61.017237] ep_pcie_reset_init: After Reset de-assert pcie_core_reset
+[   61.017258] ep_pcie_reset_init: After Reset assert pcie_phy_reset
+[   61.018298] ep_pcie_reset_init: After Reset de-assert pcie_phy_reset
+[   61.018314] ep_pcie_core_enable_endpoint: PCIe V1711211: assert PCIe WAKE#
+[   61.018347] ep_pcie_phy_init: PCIe V1711211: Unexpected phy version 2102 is caught
+[   61.020513] ep_pcie_core_enable_endpoint: PCIe V1711211: PCIe  PHY is ready
+[   61.033311] ep_pcie_core_enable_endpoint: PCIe V1711211: link initialized for LE PCIe endpoint
+[   61.033336] ep_pcie_enumeration: PCIe V1711211: PCIe link training is successful with host side. Waiting for enumeration to complete
+[   61.120709] Registering with IPA
+[   61.271762] [mhi_hwc_cb] Device in M0 State
+[   61.271846] [mhi_dev_notify_sm_event] received: MHI_DEV_EVENT_M0_STATE
+[   61.318846] ipa ipa3_dma_enable:426 Already enabled refcnt=1
+[   61.321081] ipa ipa3_dma_disable:485 Multiple enablement done. refcnt=2
+[   73.731868] audit: type=1400 audit(1609459237.509:55): avc:  denied  { getattr } for  pid=1668 comm="upg_mng" path="/data/database/upgrade_history.json.bak" dev="ubifs" ino=576 scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[   73.731888] audit: type=1400 audit(1609459237.509:56): avc:  denied  { write } for  pid=1668 comm="upg_mng" name="upgrade_history.json.bak" dev="ubifs" ino=576 scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[   73.731896] audit: type=1400 audit(1609459237.509:57): avc:  denied  { open } for  pid=1668 comm="upg_mng" path="/data/database/upgrade_history.json.bak" dev="ubifs" ino=576 scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[   73.736822] audit: type=1400 audit(1609459237.509:58): avc:  denied  { read } for  pid=1668 comm="upg_mng" name="upgrade_history.json.bak" dev="ubifs" ino=576 scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[  112.559536] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  115.763545] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  115.774893] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  115.785180] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.128494] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.140705] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.150946] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.161250] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.171598] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.183327] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.190253] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.199935] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.213306] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.225519] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.234651] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.243736] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.252840] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.261984] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.271068] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.279555] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.285830] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.293251] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.305025] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.314469] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.323792] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.326390] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.333305] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.340366] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.359630] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.372097] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.381324] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.390930] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.404628] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.413782] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.422921] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.432006] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.441117] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.450265] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.459428] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.468542] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.476568] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.489105] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.498276] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.507407] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.516478] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.527097] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.663792] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.674145] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.728051] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.745106] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.755545] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.766701] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.779105] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.783676] audit: type=1400 audit(1609459281.559:59): avc:  denied  { create } for  pid=1643 comm="oatprsyncd" name="upgrade_history.json.bak" scontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tcontext=system_u:object_r:data_t:s0 tclass=file permissive=1
+[  117.797021] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.816744] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  117.840276] qrtr_mhi_dev soc:qcom,mhi_dev_qrtr: failed to read channel 0
+[  118.042571] audit: type=1400 audit(1609459281.819:60): avc:  denied  { write } for  pid=2581 comm="dmesg" path="/run/kmsg.txt" dev="tmpfs" ino=36375 scontext=system_u:system_r:dmesg_t:s0-s15:c0.c1023 tcontext=system_u:object_r:initrc_var_run_t:s0 tclass=file permissive=1
+[  118.042591] audit: type=1400 audit(1609459281.819:61): avc:  denied  { read write } for  pid=2581 comm="dmesg" path="socket:[19792]" dev="sockfs" ino=19792 scontext=system_u:system_r:dmesg_t:s0-s15:c0.c1023 tcontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tclass=unix_stream_socket permissive=1
+[  118.042600] audit: type=1400 audit(1609459281.819:62): avc:  denied  { read write } for  pid=2581 comm="dmesg" path="socket:[19798]" dev="sockfs" ino=19798 scontext=system_u:system_r:dmesg_t:s0-s15:c0.c1023 tcontext=system_u:system_r:initrc_t:s0-s15:c0.c1023 tclass=tcp_socket permissive=1
+####################################ipq###############################################
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.4.60 (cpebuild@ubuntu-45-11) (gcc version 5.2.0 (OpenWrt GCC 5.2.0 9af9c46+r49254) ) #2 SMP PREEMPT Sat Apr 1 23:50:21 CST 2023
+[    0.000000] Boot CPU: AArch64 Processor [410fd034]
+[    0.000000] Ignoring memory range 0x40000000 - 0x41000000
+[    0.000000] Machine: Qualcomm Technologies, Inc. IPQ807x/AP-HK09
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] On node 0 totalpages: 109056
+[    0.000000]   DMA zone: 1704 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 109056 pages, LIFO batch:31
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] PERCPU: Embedded 15 pages/cpu @ffffffc01ef46000 s20992 r8192 d32256 u61440
+[    0.000000] pcpu-alloc: s20992 r8192 d32256 u61440 alloc=15*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: enabling workaround for ARM erratum 845719
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 107352
+[    0.000000] Kernel command line: console=ttyMSM0,115200n8 loglevel=0 swiotlb=1 coherent_pool=2M
+[    0.000000] PID hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.000000] software IO TLB [mem 0x5fe41000-0x5fe81000] (0MB) mapped at [ffffffc01ee41000-ffffffc01ee80fff]
+[    0.000000] Memory: 390044K/436224K available (5644K kernel code, 647K rwdata, 2388K rodata, 18576K init, 519K bss, 46180K reserved, 0K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vmalloc : 0xffffff8000000000 - 0xffffffbdbfff0000   (   246 GB)
+[    0.000000]     vmemmap : 0xffffffbdc0000000 - 0xffffffbfc0000000   (     8 GB maximum)
+[    0.000000]               0xffffffbdc0040000 - 0xffffffbdc0800000   (     7 MB actual)
+[    0.000000]     fixed   : 0xffffffbffa7fd000 - 0xffffffbffac00000   (  4108 KB)
+[    0.000000]     PCI I/O : 0xffffffbffae00000 - 0xffffffbffbe00000   (    16 MB)
+[    0.000000]     modules : 0xffffffbffc000000 - 0xffffffc000000000   (    64 MB)
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc01f000000   (   496 MB)
+[    0.000000]       .init : 0xffffffc00085a000 - 0xffffffc001a7e000   ( 18576 KB)
+[    0.000000]       .text : 0xffffffc000080000 - 0xffffffc00085a000   (  8040 KB)
+[    0.000000]       .data : 0xffffffc001a8d000 - 0xffffffc001b2ee00   (   648 KB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] NR_IRQS:64 nr_irqs:64 0
+[    0.000000] Architected cp15 timer(s) running at 19.20MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000005] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000470] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+[    0.000482] pid_max: default: 32768 minimum: 301
+[    0.000584] Mount-cache hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.000595] Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.001164] Initializing cgroup subsys io
+[    0.001181] Initializing cgroup subsys memory
+[    0.001208] Initializing cgroup subsys devices
+[    0.001220] Initializing cgroup subsys freezer
+[    0.001230] Initializing cgroup subsys net_cls
+[    0.001239] Initializing cgroup subsys pids
+[    0.001494] EFI services will not be available.
+[    0.001520] ASID allocator initialised with 65536 entries
+[    0.052150] MSM Memory Dump base table set up
+[    0.052176] MSM Memory Dump apps data table set up
+[    0.090068] Detected VIPT I-cache on CPU1
+[    0.090116] CPU1: Booted secondary processor [410fd034]
+[    0.120051] Detected VIPT I-cache on CPU2
+[    0.120080] CPU2: Booted secondary processor [410fd034]
+[    0.150081] Detected VIPT I-cache on CPU3
+[    0.150108] CPU3: Booted secondary processor [410fd034]
+[    0.150163] Brought up 4 CPUs
+[    0.150189] SMP: Total of 4 processors activated.
+[    0.150199] CPU: All CPU(s) started at EL1
+[    0.150223] alternatives: patching kernel code
+[    0.169475] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.169504] futex hash table entries: 1024 (order: 5, 131072 bytes)
+[    0.169864] pinctrl core: initialized pinctrl subsystem
+[    0.171041] NET: Registered protocol family 16
+[    0.200025] cpuidle: using governor ladder
+[    0.230042] cpuidle: using governor menu
+[    0.230250] NET: Registered protocol family 42
+[    0.230326] vdso: 2 pages (1 code @ ffffffc001a95000, 1 data @ ffffffc001a94000)
+[    0.230356] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.231257] DMA: preallocated 2048 KiB pool for atomic allocations
+[    0.231388] CPU: IPQ8072A, SoC Version: 2.0
+[    0.231807] IPC logging disabled
+[    0.231813] IPC logging disabled
+[    0.231818] IPC logging disabled
+[    0.231822] IPC logging disabled
+[    0.231826] IPC logging disabled
+[    0.233549] gpiochip_add: registered GPIOs 0 to 69 on device: 1000000.pinctrl
+[    0.233561] GPIO chip 1000000.pinctrl: created GPIO range 0->69 ==> 1000000.pinctrl PIN 0->69
+[    0.234383] Soc version is not 1, changing clock offsets
+[    0.243363] irq: no irq domain found for /soc/smp2p-wcss/slave-kernel !
+[    0.245736] irq: no irq domain found for /soc/smp2p-wcss/slave-kernel !
+[    0.249016] sps:sps is ready.
+[    0.254774] spmi spmi-0: PMIC Arb Version-2 (0x20010000)
+[    0.261609] qcom,cpr4-apss-regulator b018000.cpr4-ctrl: CPR valid fuse count: 4
+[    0.261927] qcom,cpr3-npu-regulator a4000.npu-cpr: NPU CPR valid fuse count: 2
+[    0.301212] of_get_named_gpiod_flags: can't parse 'gpio' property of node '/soc/dummy-regulator@0[0]'
+[    0.301431] of_get_named_gpiod_flags: can't parse 'gpio' property of node '/fixed-regulator@0[0]'
+[    0.302143] pps_core: LinuxPPS API ver. 1 registered
+[    0.302151] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.302174] PTP clock support registered
+[    0.303618] Advanced Linux Sound Architecture Driver Initialized.
+[    0.304265] clocksource: Switched to clocksource arch_sys_counter
+[    0.307500] NET: Registered protocol family 2
+[    0.308266] default registered
+[    0.308275] default registered
+[    0.308280] MPTCP: Stable release v0.92
+[    0.308321] TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.308386] TCP bind hash table entries: 4096 (order: 4, 65536 bytes)
+[    0.308483] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.308532] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.308554] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.308721] NET: Registered protocol family 1
+[    0.308768] PCI: CLS 0 bytes, default 128
+[   14.052360] hw perfevents: enabled with armv8_cortex_a53 PMU driver, 7 counters available
+[   14.060827] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[   14.060845] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[   14.064365] Key type asymmetric registered
+[   14.064381] Asymmetric key parser 'x509' registered
+[   14.064411] io scheduler noop registered
+[   14.064424] io scheduler deadline registered (default)
+[   14.066463] qcom-pcie 20000000.pci: GPIO lookup for consumer perst
+[   14.066474] qcom-pcie 20000000.pci: using device tree for GPIO lookup
+[   14.066487] of_get_named_gpiod_flags: can't parse 'perst-gpios' property of node '/soc/pci@20000000[0]'
+[   14.066506] of_get_named_gpiod_flags: parsed 'perst-gpio' property of node '/soc/pci@20000000[0]' - status (0)
+[   14.066651] 20000000.pci supply vdda not found, using dummy regulator
+[   14.066698] 20000000.pci supply vdda_phy not found, using dummy regulator
+[   14.066736] 20000000.pci supply vdda_refclk not found, using dummy regulator
+[   14.067449] PCI host bridge /soc/pci@20000000 ranges:
+[   14.067475]    IO 0x20200000..0x2020ffff -> 0x20200000
+[   14.067490]   MEM 0x20220000..0x2fffffff -> 0x20220000
+[   14.315808] qcom-pcie 20000000.pci: link up
+[   14.315956] qcom-pcie 20000000.pci: PCI host bridge to bus 0000:00
+[   14.315971] pci_bus 0000:00: root bus resource [bus 00-ff]
+[   14.315984] pci_bus 0000:00: root bus resource [io  0x0000-0xffff] (bus address [0x20200000-0x2020ffff])
+[   14.315994] pci_bus 0000:00: root bus resource [mem 0x20220000-0x2fffffff]
+[   14.316032] pci 0000:00:00.0: [17cb:1002] type 01 class 0x060400
+[   14.316064] pci 0000:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[   14.316120] pci 0000:00:00.0: PME# supported from
+[   14.316317] pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[   14.316492] pci 0000:01:00.0: [17cb:0306] type 00 class 0xff0000
+[   14.316637] pci 0000:01:00.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[   14.316697] pci 0000:01:00.0: reg 0x18: [mem 0x00000000-0x00000fff 64bit]
+[   14.317053] pci 0000:01:00.0: PME# supported from
+[   14.317262] pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 01
+[   14.317297] pci 0000:00:00.0: BAR 8: assigned [mem 0x20300000-0x204fffff]
+[   14.317313] pci 0000:00:00.0: BAR 9: assigned [mem 0x20500000-0x206fffff 64bit pref]
+[   14.317326] pci 0000:00:00.0: BAR 0: assigned [mem 0x20220000-0x20220fff 64bit]
+[   14.317342] pci 0000:00:00.0: BAR 7: assigned [io  0x1000-0x1fff]
+[   14.317358] pci 0000:01:00.0: BAR 0: assigned [mem 0x20300000-0x20300fff 64bit]
+[   14.317409] pci 0000:01:00.0: BAR 2: assigned [mem 0x20301000-0x20301fff 64bit]
+[   14.317457] pci 0000:00:00.0: PCI bridge to [bus 01]
+[   14.317468] pci 0000:00:00.0:   bridge window [io  0x1000-0x1fff]
+[   14.317479] pci 0000:00:00.0:   bridge window [mem 0x20300000-0x204fffff]
+[   14.317490] pci 0000:00:00.0:   bridge window [mem 0x20500000-0x206fffff 64bit pref]
+[   14.317985] [E][of_register_mhi_controller] mhi coherent pool is not reserved
+[   14.318103] mhi 0000:01:00.0: BAR 0: assigned [mem 0x20300000-0x20300fff 64bit]
+[   14.318170] mhi 0000:01:00.0: enabling device (0000 -> 0002)
+[   14.319219] PCIe: RC0 enabled during bootup
+[   14.323760] msm_rpm_log_probe: OK
+[   14.324097] msm-dcc b3000.dcc: DCC XPU is not specified
+[   14.324389] msm-dcc b3000.dcc: jiffies_64: 0xffff9068, cntvct_64: 0x493ac49d
+[   14.324401] msm-dcc b3000.dcc: gcnt_hi: 0x00000000(0xffffff80005f8004)
+[   14.324412] msm-dcc b3000.dcc: gcnt_lo: 0x493ac679(0xffffff80005f8000)
+[   14.324982] TZ SMMU State: SMMU Stage2 Enabled
+[   14.325041] TZ Log : Will warn on Access Violation, as paniconaccessviolation is not set
+[   14.326611] msm_serial 78b3000.serial: msm_serial: detected port #0
+[   14.326653] msm_serial 78b3000.serial: uartclk = 3686400
+[   14.326690] 78b3000.serial: ttyMSM0 at MMIO 0x78b3000 (irq = 78, base_baud = 230400) is a MSM
+[   14.326711] msm_serial: console setup on port #0
+[   14.327223] console [ttyMSM0] enabled
+[   14.327495] msm_serial 78b1000.serial: msm_serial: detected port #1
+[   14.327534] msm_serial 78b1000.serial: uartclk = 19200000
+[   14.327564] 78b1000.serial: ttyMSM1 at MMIO 0x78b1000 (irq = 79, base_baud = 1200000) is a MSM
+[   14.327877] msm_serial: driver initialized
+[   14.328162] msm_serial_hsl_init: driver initialized
+[   14.337195] brd: module loaded
+[   14.341602] loop: module loaded
+[   14.342240] spi_qup 78b5000.spi: IN:block:16, fifo:64, OUT:block:16, fifo:64
+[   14.343711] m25p80 spi32766.0: found gd25lq32, expected n25q128a11
+[   14.343725] m25p80 spi32766.0: gd25lq32 (4096 Kbytes)
+[   14.343778] 11 ofpart partitions found on MTD device spi32766.0
+[   14.343786] Creating 11 MTD partitions on "spi32766.0":
+[   14.343796] 0x000000000000-0x000000040000 : "0:SBL1"
+[   14.344505] 0x000000040000-0x000000050000 : "0:MIBIB"
+[   14.345121] 0x000000050000-0x0000001b0000 : "0:QSEE"
+[   14.345730] 0x0000001b0000-0x0000001c0000 : "0:DEVCFG"
+[   14.346331] 0x0000001c0000-0x0000001e0000 : "0:RPM"
+[   14.346949] 0x0000001e0000-0x0000001f0000 : "0:CDT"
+[   14.347596] 0x0000001f0000-0x000000200000 : "0:APPSBLENV"
+[   14.348219] 0x000000200000-0x0000002a0000 : "0:APPSBL"
+[   14.348849] 0x0000002a0000-0x0000002e0000 : "0:ART"
+[   14.349500] 0x0000002e0000-0x0000002f0000 : "0:OEM"
+[   14.350121] 0x0000002f0000-0x000000310000 : "0:CRASH"
+[   14.351724] libphy: Fixed MDIO Bus: probed
+[   14.352338] of_get_named_gpiod_flags: can't parse 'phy-enable-0-85v' property of node '/soc/mdio@90000[0]'
+[   14.352351] qca-mdio 90000.mdio: Could not find phy-enable-0-85v
+[   14.352361] of_get_named_gpiod_flags: can't parse 'phy-enable-1-2v' property of node '/soc/mdio@90000[0]'
+[   14.352369] qca-mdio 90000.mdio: Could not find phy-enable-1-2v
+[   14.352378] of_get_named_gpiod_flags: can't parse 'phy-enable-2-1v' property of node '/soc/mdio@90000[0]'
+[   14.352387] qca-mdio 90000.mdio: Could not find phy-enable-2-1v
+[   14.352395] of_get_named_gpiod_flags: can't parse 'phy-enable-1-8v' property of node '/soc/mdio@90000[0]'
+[   14.352404] qca-mdio 90000.mdio: Could not find phy-enable-1-8v
+[   14.352420] of_get_named_gpiod_flags: parsed 'phy-reset-gpio' property of node '/soc/mdio@90000[0]' - status (0)
+[   14.568024] rmnet_ctl driver probed
+[   14.572517] of_get_named_gpiod_flags: parsed 'phy-reset-gpio' property of node '/soc/mdio@90000[1]' - status (0)
+[   14.792587] of_get_named_gpiod_flags: parsed 'phy-reset-gpio' property of node '/soc/mdio@90000[2]' - status (0)
+[   15.012741] libphy: qca_mdio: probed
+[   15.013509] qca-mdio 90000.mdio: qca-mdio driver was registered
+[   15.013792] Unable to create IPC log context!
+[   15.014118] Skip QCA8074V1 in V2 platform
+[   15.014409] cnss[2]: INFO: Platform driver probed successfully. plat ffffffc015590018 tgt 0xfffe
+[   15.014672] i2c /dev entries driver
+[   15.064777] device-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com
+[   15.065282] sdhci: Secure Digital Host Controller Interface driver
+[   15.065289] sdhci: Copyright(c) Pierre Ossman
+[   15.065300] sdhci-pltfm: SDHCI platform and OF driver helper
+[   15.066016] qcom_ice_get_device_tree_data: No vdd-hba-supply regulator, assuming not needed
+[   15.066083] ICE IRQ = 82
+[   15.066611] 
+[   15.066611] Version Rollback Feature Disabled
+[   15.067135] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000008b04000
+[   15.067144] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000008b04000sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000008b04000
+[   15.067159] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000008b04000sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000008b04000
+[   15.067173] sps:BAM 0x0000000008b04000 is registered.<6>[   15.068981] remoteproc remoteproc0: releasing cd00000.qcom_q6v5_wcss
+[   15.069768] SPMI VADC - Min ch: 0 Max ch: 15
+[   15.071547] of_graph_get_next_endpoint(): no port node found in /soc/csr@6001000
+[   15.071638] coresight-csr 6001000.csr: CSR initialized
+[   15.071791] of_graph_get_next_endpoint(): no port node found in /soc/cti@6010000
+[   15.071953] of_graph_get_next_endpoint(): no port node found in /soc/cti@6011000
+[   15.072105] of_graph_get_next_endpoint(): no port node found in /soc/cti@6012000
+[   15.072253] of_graph_get_next_endpoint(): no port node found in /soc/cti@6013000
+[   15.072403] of_graph_get_next_endpoint(): no port node found in /soc/cti@6014000
+[   15.072552] of_graph_get_next_endpoint(): no port node found in /soc/cti@6015000
+[   15.072699] of_graph_get_next_endpoint(): no port node found in /soc/cti@6016000
+[   15.072852] of_graph_get_next_endpoint(): no port node found in /soc/cti@6017000
+[   15.073002] of_graph_get_next_endpoint(): no port node found in /soc/cti@6018000
+[   15.073153] of_graph_get_next_endpoint(): no port node found in /soc/cti@6019000
+[   15.073303] of_graph_get_next_endpoint(): no port node found in /soc/cti@601a000
+[   15.073456] of_graph_get_next_endpoint(): no port node found in /soc/cti@601b000
+[   15.073610] of_graph_get_next_endpoint(): no port node found in /soc/cti@601c000
+[   15.073762] of_graph_get_next_endpoint(): no port node found in /soc/cti@601d000
+[   15.073914] of_graph_get_next_endpoint(): no port node found in /soc/cti@601e000
+[   15.074069] of_graph_get_next_endpoint(): no port node found in /soc/cti@601f000
+[   15.074224] of_graph_get_next_endpoint(): no port node found in /soc/cti@6198000
+[   15.074438] of_graph_get_next_endpoint(): no port node found in /soc/cti@6199000
+[   15.074603] of_graph_get_next_endpoint(): no port node found in /soc/cti@619a000
+[   15.074764] of_graph_get_next_endpoint(): no port node found in /soc/cti@619b000
+[   15.074941] of_graph_get_next_endpoint(): no port node found in /soc/cti@610c000
+[   15.075269] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000006044000
+[   15.075278] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000006044000sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000006044000
+[   15.075292] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000006044000sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000006044000
+[   15.075306] sps:BAM 0x0000000006044000 is registered.<6>[   15.075750] coresight-tmc 6028000.tmc: TMC initialized
+[   15.076174] coresight-tmc 6027000.tmc: TMC initialized
+[   15.076521] coresight-funnel 6021000.funnel: FUNNEL initialized
+[   15.076771] coresight-funnel 6100000.funnel: FUNNEL initialized
+[   15.077018] coresight-funnel 6120000.funnel: FUNNEL initialized
+[   15.077266] coresight-funnel 6130000.funnel: FUNNEL initialized
+[   15.077520] coresight-funnel 61a1000.funnel: FUNNEL initialized
+[   15.078272] coresight-etm4x 619c000.etm: ETM 4.0 initialized
+[   15.078766] coresight-etm4x 619d000.etm: ETM 4.0 initialized
+[   15.079250] coresight-etm4x 619e000.etm: ETM 4.0 initialized
+[   15.079733] coresight-etm4x 619f000.etm: ETM 4.0 initialized
+[   15.080014] coresight-replicator-qcom 6026000.replicator: REPLICATOR 1.0 initialized
+[   15.080393] coresight-stm 6002000.stm: STM initialized
+[   15.081610] of_graph_get_next_endpoint(): no port node found in /soc/hwevent@6101000
+[   15.081717] coresight-hwevent 6101000.hwevent: Hardware Event driver initialized
+[   15.085139] NET: Registered protocol family 10
+[   15.086044] fullmesh registered
+[   15.086059] ndiffports registered
+[   15.086076] binder registered
+[   15.086088] roundrobin registered
+[   15.086099] redundant registered
+[   15.086111] NET: Registered protocol family 17
+[   15.086160] bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+[   15.086196] Bridge firewalling registered
+[   15.086209] 8021q: 802.1Q VLAN Support v1.8
+[   15.102718] qcom,cpr4-apss-regulator b018000.cpr4-ctrl: CPR valid fuse count: 4
+[   15.102957] pmd9655_s3: supplied by e-smps1-reg
+[   15.103153] cpr4_ipq807x_apss_read_fuse_data: apc_corner: speed bin = 0
+[   15.103163] cpr4_ipq807x_apss_read_fuse_data: apc_corner: CPR fusing revision = 1
+[   15.103171] cpr4_ipq807x_apss_read_fuse_data: apc_corner: CPR misc fuse value = 0
+[   15.103203] cpr4_ipq807x_apss_read_fuse_data: apc_corner: Voltage boost fuse config = 0 boost = disable
+[   15.103281] cpr3_mem_acc_init: apc: not using memory accelerator regulator
+[   15.103290] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused      SVS: open-loop= 704000 uV
+[   15.103298] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused      NOM: open-loop= 816000 uV
+[   15.103306] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused    TURBO: open-loop= 872000 uV
+[   15.103313] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused   STURBO: open-loop= 960000 uV
+[   15.103379] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused      SVS: quot[ 7]= 732, quot_offset[ 7]=   0
+[   15.103388] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused      NOM: quot[ 7]= 951, quot_offset[ 7]= 215
+[   15.103397] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused    TURBO: quot[ 7]=1049, quot_offset[ 7]=  95
+[   15.103406] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused   STURBO: quot[ 7]=1213, quot_offset[ 7]= 160
+[   15.103542] cpr3_regulator_init_ctrl: apc: Default CPR mode = closed-loop
+[   15.104073] qcom,cpr3-npu-regulator a4000.npu-cpr: NPU CPR valid fuse count: 2
+[   15.104186] pmd9655_s4: supplied by e-smps1-reg
+[   15.104361] cpr3_mem_acc_init: npu: not using memory accelerator regulator
+[   15.104371] npu_corner: fused      NOM: open-loop= 784000 uV
+[   15.104378] npu_corner: fused    TURBO: open-loop= 856000 uV
+[   15.104422] npu_corner: fused      NOM: open-loop= 784000 uV
+[   15.104429] npu_corner: fused    TURBO: open-loop= 856000 uV
+[   15.104457] npu_corner: Normal and Cold condition init done. Default to normal.
+[   15.105408] cpufreq: cpufreq_online: CPU0: Running at unlisted freq: 800000 KHz
+[   15.105571] cpufreq: cpufreq_online: CPU0: Unlisted initial frequency changed to: 1017600 KHz
+[   15.106787] qcom-q6v5-wcss-pil cd00000.qcom_q6v5_wcss: ssr registeration success qcom_q6v5_wcss
+[   15.106823] remoteproc remoteproc0: cd00000.qcom_q6v5_wcss is available
+[   15.107043] hctosys: unable to open rtc device (rtc0)
+[   15.112304] pmd9655_ldo11: disabling
+[   15.112767] ALSA device list:
+[   15.112770]   No soundcards found.
+[   15.120677] Freeing unused kernel memory: 18576K (ffffffc00085a000 - ffffffc001a7e000)
+[   15.120701] Freeing alternatives memory: 44K (ffffffc001a7e000 - ffffffc001a89000)
+[   15.125165] init: Console is alive
+[   15.125256] init: - watchdog -
+[   15.134785] usbcore: registered new interface driver usbfs
+[   15.134813] usbcore: registered new interface driver hub
+[   15.134868] usbcore: registered new device driver usb
+[   15.135886] Button Hotplug driver version 0.4.1
+[   15.138232] SCSI subsystem initialized
+[   15.140293] libata version 3.00 loaded.
+[   15.142904] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[   15.143194] ehci-platform: EHCI generic platform driver
+[   15.149686] msm-usb-ssphy-qmp 78000.ssphy: Initializing QMP phy
+[   15.156600] msm-usb-ssphy-qmp 78000.ssphy: QMP PHY initialization timeout
+[   15.156604] msm-usb-ssphy-qmp 78000.ssphy: USB3_PHY_PCS_STATUS:68686868
+[   15.357705] msm-usb-ssphy-qmp 58000.ssphy: Initializing QMP phy
+[   15.365294] msm-usb-ssphy-qmp 58000.ssphy: QMP PHY initialization timeout
+[   15.365298] msm-usb-ssphy-qmp 58000.ssphy: USB3_PHY_PCS_STATUS:68686868
+[   15.567846] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[   15.567865] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[   15.568008] xhci-hcd xhci-hcd.0.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x00010010
+[   15.568042] xhci-hcd xhci-hcd.0.auto: irq 193, io mem 0x08a00000
+[   15.568369] hub 1-0:1.0: USB hub found
+[   15.568385] hub 1-0:1.0: 1 port detected
+[   15.568537] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[   15.568544] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[   15.568572] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[   15.568778] hub 2-0:1.0: USB hub found
+[   15.568790] hub 2-0:1.0: 1 port detected
+[   15.568942] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[   15.568951] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 3
+[   15.569076] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x00010010
+[   15.569100] xhci-hcd xhci-hcd.1.auto: irq 194, io mem 0x08c00000
+[   15.569310] hub 3-0:1.0: USB hub found
+[   15.569322] hub 3-0:1.0: 1 port detected
+[   15.569429] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[   15.569435] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 4
+[   15.569460] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+[   15.569652] hub 4-0:1.0: USB hub found
+[   15.569664] hub 4-0:1.0: 1 port detected
+[   15.571239] gpio_buttons initialized
+[   15.571441] gpio-led init driver
+[   15.571924] gpio_led_probe:gpio device register
+[   15.572284] hw_version_init
+[   15.572597] usb_protect initialized
+[   15.572832] Init module OPANIC v2.0 
+[   15.573857] usbcore: registered new interface driver usb-storage
+[   15.574408] usbcore: registered new interface driver uas
+[   16.125632] init: - preinit -
+[   16.156404] random: dropbearkey: uninitialized urandom read (32 bytes read, 2 bits of entropy available)
+[   16.157703] random: dropbearkey: uninitialized urandom read (32 bytes read, 2 bits of entropy available)
+[   16.557613] random: dropbearkey: uninitialized urandom read (32 bytes read, 3 bits of entropy available)
+[   16.560171] random: dropbear: uninitialized urandom read (32 bytes read, 3 bits of entropy available)
+[   28.203259] jffs2reset: This will erase all settings and remove any installed packages. Are you sure? [N/y]
+[   51.203007] mount_root: mounting /dev/root
+[   63.667367] procd: - early -
+[   63.667396] procd: - watchdog -
+[   64.239306] procd: - ubus -
+[   65.240855] random: ubusd: uninitialized urandom read (4 bytes read, 38 bits of entropy available)
+[   65.240937] random: ubusd: uninitialized urandom read (4 bytes read, 38 bits of entropy available)
+[   65.240946] random: ubusd: uninitialized urandom read (4 bytes read, 38 bits of entropy available)
+[   65.240995] random: ubusd: uninitialized urandom read (4 bytes read, 38 bits of entropy available)
+[   65.241003] random: ubusd: uninitialized urandom read (4 bytes read, 38 bits of entropy available)
+[   65.241030] random: ubusd: uninitialized urandom read (4 bytes read, 38 bits of entropy available)
+[   65.241114] procd: - init -
+[   65.887003] ntfs: driver 2.1.32 [Flags: R/O MODULE].
+[   65.890347] Initializing XFRM netlink socket
+[   65.890950] NET: Registered protocol family 15
+[   65.898704] ssdk_switch_device_num_init[1159]:INFO:ess-switch dts node number: 1
+[   65.898749] ssdk_dt_get_switch_node[970]:INFO:ess-switch DT exist!
+[   65.898758] ssdk_dt_parse_access_mode[856]:INFO:switch_access_mode: local bus
+[   65.898761] ssdk_dt_parse_access_mode[869]:INFO:switchreg_base_addr: 0x3a000000
+[   65.898763] ssdk_dt_parse_access_mode[870]:INFO:switchreg_size: 0x1000000
+[   65.898766] ssdk_dt_parse_mac_mode[295]:INFO:mac mode = 0x0
+[   65.898769] ssdk_dt_parse_mac_mode[304]:INFO:mac mode1 = 0xf
+[   65.898773] ssdk_dt_parse_mac_mode[313]:INFO:mac mode2 = 0xf
+[   65.898788] ssdk_dt_parse_phy_info[659]:INFO:[PORT 5] port_mac_sel = QGMAC_PORT
+[   65.898793] ssdk_dt_parse_phy_info[659]:INFO:[PORT 6] port_mac_sel = QGMAC_PORT
+[   65.898806] ssdk_dt_parse_uniphy[332]:INFO:ess-uniphy DT exist!
+[   65.898895] ssdk_dt_parse_intf_mac[801]:INFO:dp1 MAC 00:03:7f:ba:db:ad
+[   65.898999] ssdk_plat_init start
+[   65.976285] ssdk_gcc_clock_init[1011]:INFO:SSDK gcc clock init successfully!
+[   65.977009] HPPE initializing...
+[   65.977128] ssdk_phy_driver_init[328]:INFO:dev_id = 0, phy_adress = 2, phy_id = 0xffffffff phytype doesn't match
+[   65.977158] ssdk_phy_driver_init[328]:INFO:dev_id = 0, phy_adress = 3, phy_id = 0xffffffff phytype doesn't match
+[   65.977187] ssdk_phy_driver_init[328]:INFO:dev_id = 0, phy_adress = 24, phy_id = 0xffffffff phytype doesn't match
+[   65.977216] ssdk_phy_driver_init[328]:INFO:dev_id = 0, phy_adress = 28, phy_id = 0xffffffff phytype doesn't match
+[   65.977222] malibu_phy_api_ops_init[2875]:INFO:qca probe malibu phy driver succeeded!
+[   65.978755] regi_init[3526]:INFO:Initializing HPPE!!
+[   66.194264] ssdk_ppe_reset_init[1243]:INFO:ppe reset successfully!
+[   66.197291] qca_hppe_tdm_hw_init[674]:INFO:tdm setup num=96
+[   66.197576] qca_hppe_portctrl_hw_init[105]:INFO:Hawkeye PPE port initializing
+[   68.671314] ssdk_switch_register[1691]:INFO:Chip version 0x1500
+[   68.671329] qca_link_polling_select[1307]:INFO:link-polling-required node does not exist
+[   68.671332] ssdk_switch_register[1717]:INFO:polling is selected
+[   68.671337] regi_init[3530]:INFO:Initializing HPPE Done!!
+[   68.671392] regi_init[3590]:INFO:qca-ssdk module init succeeded!
+[   68.674942] tun: Universal TUN/TAP device driver, 1.6
+[   68.674950] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[   68.677162] EDMA ver 1 hw init
+[   68.677394] EDMA HW Reset completed succesfully
+[   68.677430] Num rings - TxDesc:1 (23-23) TxCmpl:1 (7-7)
+[   68.677433] RxDesc:1 (15-15) RxFill:1 (7-7)
+[   68.678649] GMAC2(ffffffc00110a880) Invalid MAC@ - using 12:68:8e:8a:bf:e6
+[   68.679425] GMAC3(ffffffc00110e880) Invalid MAC@ - using 9a:ba:fd:59:c5:b5
+[   68.679558] libphy: PHY 90000.mdio:02 not found
+[   68.679583] nss-dp: probe of 3a001400.dp3 failed with error -14
+[   68.679619] GMAC4(ffffffc00110e880) Invalid MAC@ - using 76:ec:dc:27:d3:90
+[   68.679657] libphy: PHY 90000.mdio:03 not found
+[   68.679665] nss-dp: probe of 3a001600.dp4 failed with error -14
+[   68.679692] GMAC5(ffffffc00110e880) Invalid MAC@ - using 76:e0:91:50:da:1c
+[   68.679720] libphy: PHY 90000.mdio:18 not found
+[   68.679727] nss-dp: probe of 3a001800.dp5 failed with error -14
+[   68.679752] GMAC6(ffffffc00110e880) Invalid MAC@ - using 5a:24:66:5d:03:90
+[   68.679779] libphy: PHY 90000.mdio:1c not found
+[   68.679786] nss-dp: probe of 3a001a00.dp6 failed with error -14
+[   68.679847] **********************************************************
+[   68.679849] * NSS Data Plane driver
+[   68.679851] **********************************************************
+[   68.687785] l2tp_core: L2TP core driver, V2.0
+[   68.688391] l2tp_netlink: L2TP netlink interface
+[   68.751586] qca-nss 39000000.nss: Direct firmware load for qca-nss0.bin failed with error -2
+[   68.751596] qca-nss 39000000.nss: Falling back to user helper
+[   68.769258] nss_driver - fw of size 779896  bytes copied to load addr: 40000000, nss_id : 0
+[   68.771148] Supported Frequencies - 
+[   68.771157] 748.8 MHz 1.4976 GHz 
+[   68.771162] 1.6896 GHz <1>[   68.771164] 
+[   68.771291] ffffffbffc659d00: set sdma ffffffc015577600
+[   68.771382] ffffffbffc659d00: meminfo init succeed
+[   68.789016] qca-nss 39400000.nss: Direct firmware load for qca-nss1.bin failed with error -2
+[   68.789025] qca-nss 39400000.nss: Falling back to user helper
+[   68.803744] node size 2 # items 4
+[   68.803754] memory: 40000000 536870912 (avl 505094144) items 4 active_cores 2
+[   68.803762] addr/size storage words 2 2 # words 4 in DTS, ddr size 1000000
+[   68.803767] ffffffbffc659d00: nss core 0 booted successfully
+[   68.807548] nss_driver - fw of size 291644  bytes copied to load addr: 40800000, nss_id : 1
+[   68.809914] Supported Frequencies - 
+[   68.809920] 748.8 MHz 1.4976 GHz 
+[   68.809925] 1.6896 GHz <1>[   68.809927] 
+[   68.810061] ffffffbffc660c80: set sdma ffffffc013fa4d00
+[   68.810127] ffffffbffc660c80: meminfo init succeed
+[   68.812606] sit: IPv6 over IPv4 tunneling driver
+[   68.814038] node size 2 # items 4
+[   68.814050] memory: 40000000 536870912 (avl 505094144) items 4 active_cores 2
+[   68.814058] addr/size storage words 2 2 # words 4 in DTS, ddr size 1000000
+[   68.814073] ffffffbffc660c80: nss core 1 booted successfully
+[   68.815938] nat46: module (version 8ff2ae59ec9840a7b8b45f976c51cae80abe0226) loaded.
+[   68.818765] gre: GRE over IPv4 demultiplexor driver
+[   68.819663] ip_gre: GRE over IPv4 tunneling driver
+[   68.821349] ip6_gre: GRE over IPv6 tunneling driver
+[   68.823697] Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+[   68.828537] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[   68.832353] rmnet_nss_init(): initializing rmnet_nss
+[   68.835688] nf_conntrack version 0.5.0 (3192 buckets, 12768 max)
+[   68.842485] QCA Hy-Fi multicast installation successfully
+[   68.848950] PPP generic driver version 2.4.2
+[   68.850743] nss_lag_init[352]:LAG Manager Installed
+[   68.852566] NET: Registered protocol family 24
+[   68.855199] PPTP driver version 0.8.5
+[   68.859946] diag: IPC Logging disabled
+[   68.910550] TRACK: P[0]	PMask[4]
+[   68.910560] TRACK: P[1]	PMask[4]
+[   68.910562] TRACK: P[2]	PMask[4]
+[   68.960710] TRACK: P[3]	PMask[4]
+[   68.960747] nik 4097 info->svc_id
+[   68.984181] QCA multicast snooping installed successfully
+[   68.985554] <NSS-CRYPTO>:module loaded Build_ID - 04/01/23, 23:40:57 SoC=ipq807x_64
+[   68.987305] nss-macsec0 DT exist!
+[   68.987378] nss-macsec1 DT exist!
+[   68.987454] cannot find nss-macsec2 node
+[   68.987456] nss_macsec init success
+[   69.003750] u32 classifier
+[   69.003758]     input device check on
+[   69.003761]     Actions configured
+[   69.004497] Mirror/redirect action on
+[   69.012338] fuse init (API version 7.23)
+[   69.014901] arp_tables: (C) 2002 David S. Miller
+[   69.022155] Ebtables v2.0 registered
+[   69.023426] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   69.026186] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[   69.109860] nf_conntrack_rtsp v0.6.21 loading
+[   69.257224] nf_nat_rtsp v0.6.21 loading
+[   69.260161] Netfilter messages via NETLINK v0.30.
+[   69.262268] PPP MPPE Compression module registered
+[   69.278868] xt_time: kernel timezone is -0000
+[   69.285735] ctnetlink v0.93: registering with nfnetlink.
+[   69.728754] ECM init
+[   69.728815] ECM database jhash random seed: 0x2e62d33d
+[   69.729920] ECM init complete
+[   70.101859] sh (1670): drop_caches: 3
+[   70.411743] random: nonblocking pool is initialized
+[   70.437135] main[3266] IPQCM:IPQCM Quitting!!!
+[   70.624964] ECM exit
+[   70.705488] DFC QMAP init
+[   70.734438] Connection established with the WDA Service, DL Marker disabled
+[   70.854668] ECM exit complete
+[   71.036004] [RMNET:HI] rmnet_vnd_create_dev(): NSS context for rmnet_data3 created
+[   71.069813] sh (2439): /proc/1989/oom_adj is deprecated, please use /proc/1989/oom_score_adj instead.
